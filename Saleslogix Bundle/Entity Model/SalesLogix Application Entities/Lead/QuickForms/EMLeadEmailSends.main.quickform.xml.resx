@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="grdEMCampaignSendSummaries.1da23804-97e1-4d53-8ec7-ff7d5f80d7b7.ColumnHeading" xml:space="preserve">
+    <value>Date First Opened</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.f9c45f1f-65be-4139-bae3-7f14210b494a.ColumnHeading" xml:space="preserve">
+    <value>Date Last Opened</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.7d8076f0-9048-4a66-bda3-07cea70b2d50.ColumnHeading" xml:space="preserve">
+    <value>Date Sent</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.488b5e9a-57df-4a60-950a-5af5c7f8f52c.ColumnHeading" xml:space="preserve">
+    <value>HardBounced</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.28c05bf2-adc4-48a6-84f1-06fa79a6602c.ColumnHeading" xml:space="preserve">
+    <value>Clicks</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.fac0d71d-4ef8-461b-ac06-5d7e41784057.ColumnHeading" xml:space="preserve">
+    <value>Estimated Forwards</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.2c95a52f-23d3-40b3-9868-c467c9d5a475.ColumnHeading" xml:space="preserve">
+    <value>Forward To Friend</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.89ef877d-bcea-4683-8bef-c7c78f41f5c9.ColumnHeading" xml:space="preserve">
+    <value>Opens</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.bdc93887-cab6-485f-b9a4-452aa98cb06e.ColumnHeading" xml:space="preserve">
+    <value>Replies</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.06d9b9dd-a011-44f8-8c8c-1b75b839eb7d.ColumnHeading" xml:space="preserve">
+    <value>Views</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.3999f06a-de78-4d19-9ba3-02010ee6b035.ColumnHeading" xml:space="preserve">
+    <value>SoftBounced</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.aefd5c53-f320-4b2a-aee0-9688d26b6186.ColumnHeading" xml:space="preserve">
+    <value>Unsubscribed</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.d23821c1-84cb-4ffb-a7cd-c67fcaf4c3f6.ColumnHeading" xml:space="preserve">
+    <value>Last Synchronised</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.99d2eb56-3f2c-4ff4-9f38-c6ec1b025754.ColumnHeading" xml:space="preserve">
+    <value>Hard Bounced</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.d31752f1-cac6-49ee-ab77-2cc3760f08fa.ColumnHeading" xml:space="preserve">
+    <value>Soft Bounced</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.30ceb468-bb82-4c65-ae98-ddef7808599e.ColumnHeading" xml:space="preserve">
+    <value>Unsubscribed</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.017e56ae-bd02-46bd-8722-4c92088f9ee4.ColumnHeading" xml:space="preserve">
+    <value>Email Campaign</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.6fa106f5-57bb-4ea7-82e2-f0be5a522bd7.ColumnHeading" xml:space="preserve">
+    <value>Address Book</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.7b4e5fe1-ca4f-4dc4-b6d5-862a0272d0ed.ColumnHeading" xml:space="preserve">
+    <value>Hard Bounced</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.d9f10ed2-bb1f-4cbb-af66-9a416e1fffa6.ColumnHeading" xml:space="preserve">
+    <value>Soft Bounced</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.97fb78b9-8dad-436d-83e6-09526b8e8e67.ColumnHeading" xml:space="preserve">
+    <value>Unsubscribed</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.4142b693-d7f5-4bfe-92fc-ea06136287f8.ColumnHeading" xml:space="preserve">
+    <value>Last Synchronised</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.4f960cf4-39f5-4b4f-aef6-e356483cfcdb.ColumnHeading" xml:space="preserve">
+    <value>Email Campaign</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.bc2c006e-42fc-4bb2-9af8-1fd329462fb0.ColumnHeading" xml:space="preserve">
+    <value>Address Book</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.3e353de8-a629-4c1d-b517-0c713ea2bc24.ColumnHeading" xml:space="preserve">
+    <value>Date Sent</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.40e8cfc9-2649-4754-b6d9-3efca4f59e08.ColumnHeading" xml:space="preserve">
+    <value>Date First Opened</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.a80a66ef-24e9-4cfc-8ca4-cf38d9cc2f14.ColumnHeading" xml:space="preserve">
+    <value>Date Last Opened</value>
+  </data>
+</root>

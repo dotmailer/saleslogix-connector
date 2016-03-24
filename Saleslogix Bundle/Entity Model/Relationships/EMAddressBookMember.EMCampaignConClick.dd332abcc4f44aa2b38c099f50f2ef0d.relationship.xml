@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<relationship xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="dd332abc-c4f4-4aa2-b38c-099f50f2ef0d" lastModifiedUtc="2012-05-14T14:17:47.6113585Z" parentEntityId="87dd490f-9bc1-4c47-b810-011e23a9894d" childEntityId="ecdf574f-89a4-4bee-849c-0c4282cd0fc2">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmRelationship" />
+  </ExtendedPropertiesCollection>
+  <parentProperty id="01e2d3d0-dda5-4d31-8413-02f09795a806" lastModifiedUtc="2012-05-14T14:17:45.985486Z" name="EMCampaignConClicks" audited="false">
+    <ExtendedPropertiesCollection>
+      <extendee type="Sage.Platform.Orm.Entities.OrmRelationProperty">
+        <extender guid="ae60621d-9d91-3d9a-b9fb-eb6c8be12131">
+          <OrmEntityPropertySDataExtension generate="true" />
+        </extender>
+      </extendee>
+    </ExtendedPropertiesCollection>
+    <SystemDataType guid="2f770d03-c93c-4605-8ae8-7cdae04830d7">
+      <RelationshipDataType />
+    </SystemDataType>
+  </parentProperty>
+  <childProperty id="40a79b1a-1a7e-4f6c-b750-caf455cd5691" lastModifiedUtc="2012-05-14T14:17:45.9864625Z" name="EMAddressBookMember" audited="false">
+    <ExtendedPropertiesCollection>
+      <extendee type="Sage.Platform.Orm.Entities.OrmRelationProperty">
+        <extender guid="ae60621d-9d91-3d9a-b9fb-eb6c8be12131">
+          <OrmEntityPropertySDataExtension generate="true" />
+        </extender>
+      </extendee>
+    </ExtendedPropertiesCollection>
+    <SystemDataType guid="2f770d03-c93c-4605-8ae8-7cdae04830d7">
+      <RelationshipDataType />
+    </SystemDataType>
+  </childProperty>
+  <column>
+    <OrmRelationshipColumn id="6d1b2408-a380-421d-b2c5-1b76336fa120" parentPropertyId="b48ee2c8-0889-4ab8-bb24-32825faaddc3" childPropertyId="04350d9e-fe0a-4a3c-a5ac-18da067f7fc7" ordinal="0" />
+  </column>
+</relationship>

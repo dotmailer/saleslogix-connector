@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<method xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="c633ac3a-c680-4042-a041-a1bf19120484" lastModifiedUtc="2012-09-13T10:47:06.9501996Z" name="CountMembers" returnType="Int32" methodType="Rule" actionType="None" returnMode="Object">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmEntityMethod" />
+  </ExtendedPropertiesCollection>
+  <parameter />
+  <preExecuteTargets />
+  <methodTargets>
+    <methodTarget xsi:type="OrmMethodTargetSnippet" id="b6ff5146-3eb8-48d8-9ef0-72de2fd992b2" lastModifiedUtc="2012-09-13T11:05:09.1758758Z" targetType="Sage.BusinessRules.CodeSnippets.EMAddressBookBusinessRules, Sage.SnippetLibrary.CSharp" targetMethod="CountMembersStep" active="true" description="Count the members of the address book without having to load them all." codeSnippetId="c7350c1f-91ea-4c66-b341-af92703eea57">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTargetSnippet" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+  </methodTargets>
+  <postExecuteTargets />
+  <postFlushTargets />
+</method>

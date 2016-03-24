@@ -1,0 +1,7 @@
+﻿<?xml version="1.0"?>
+<entityFilter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="OrmDistinctEntityFilter" id="bba0bb28-5d38-4063-a114-65fd2c805563" lastModifiedUtc="2012-07-31T18:02:43.2984428Z" filterName="EmailAccount" propertyName="EMEmailAccount.AccountName" dataPath="EMEMAILCAMPAIGN:EMEMAILACCOUNTID&gt;EMEMAILACCOUNTID.EMEMAILACCOUNT!ACCOUNTNAME" characters="0">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmDistinctEntityFilter" />
+  </ExtendedPropertiesCollection>
+</entityFilter>

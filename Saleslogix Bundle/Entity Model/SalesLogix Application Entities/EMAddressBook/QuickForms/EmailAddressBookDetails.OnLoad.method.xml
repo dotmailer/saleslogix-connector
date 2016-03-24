@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<method xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="OrmOtherMethod" id="c7e151bf-cb9c-4a1b-b13c-098551c8119e" lastModifiedUtc="2012-08-04T15:54:13.6127207Z" name="OnLoad" methodType="Other" actionType="None" returnMode="None" isInstance="false" containerName="EmailAddressBookDetails">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmOtherMethod" />
+  </ExtendedPropertiesCollection>
+  <parameter>
+    <OrmEntityMethodParam id="b5fa537b-5cad-458f-8889-7b96afd99100" paramName="form" sequence="0" paramType="IEmailAddressBookDetails" />
+    <OrmEntityMethodParam id="7e3533b3-5167-4fbc-afe8-1c8791eb6eee" paramName="args" sequence="0" paramType="EventArgs" />
+  </parameter>
+  <preExecuteTargets />
+  <methodTargets>
+    <methodTarget xsi:type="OrmMethodTargetSnippet" id="df76ad1c-1731-4c6f-b55b-6717682c8067" lastModifiedUtc="2014-01-13T16:34:32.7791164Z" targetType="Sage.BusinessRules.CodeSnippets.EmailAddressBookDetailsEventHandlers, Sage.SnippetLibrary.CSharp" targetMethod="OnLoadStep" active="true" codeSnippetId="70eea885-8b78-45e1-b600-3ca1b6b97b57">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTargetSnippet" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+  </methodTargets>
+  <postExecuteTargets />
+  <postFlushTargets />
+</method>

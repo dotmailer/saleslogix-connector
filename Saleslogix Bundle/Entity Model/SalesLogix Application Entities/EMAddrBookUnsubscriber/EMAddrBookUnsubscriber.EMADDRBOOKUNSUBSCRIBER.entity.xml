@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="b3f0c2aa-87a2-4bc1-af80-7f560acac2b9" lastModifiedUtc="2012-07-20T12:27:48.0998001Z" manageSchema="false" tableName="EMADDRBOOKUNSUBSCRIBER" name="EMAddrBookUnsubscriber" isExtension="false" audited="false" generateSDataFeed="true" sDataPathName="emailaddressbookunsubscribers" onBeforeInsertMethodId="ad047e24-10a9-49fc-8b83-ac5536215363" onAfterInsertMethodId="398c9413-ac9c-4fbd-bc9c-e23158666dc5" onBeforeUpdateMethodId="4defc6e2-7656-448b-b7a0-53c8ead93276" onAfterUpdateMethodId="f11fb594-8bb1-4faf-94ee-7a23da7d6b44" onBeforeDeleteMethodId="54f523f6-b2e6-43aa-8a73-2ec39b30ccb4" onAfterDeleteMethodId="2a6651f6-ffd4-414a-8095-b5de00edbaa0" onCreateId="9fdbe4ec-6e5c-4abd-81c4-53f3e00146b8">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmEntity">
+      <extender guid="1589723d-0536-4bf3-bdd7-3f6f7fe165d0">
+        <OrmEntityMetadataExtension>
+          <IsHistoryTable>false</IsHistoryTable>
+        </OrmEntityMetadataExtension>
+      </extender>
+    </extendee>
+  </ExtendedPropertiesCollection>
+  <keyProperties>
+    <keyReference id="d0d43939-333c-4269-9c08-6e1b92721027" ordinalPosition="1" />
+  </keyProperties>
+  <properties>
+    <property xsi:type="OrmFieldProperty" id="d0d43939-333c-4269-9c08-6e1b92721027" lastModifiedUtc="2012-04-30T14:05:38.174091Z" name="Emaddrbookunsubscriberid" audited="false" isNullable="false" columnName="EMADDRBOOKUNSUBSCRIBERID" maxLength="12" precision="0" scale="0" ordinal="0" isReadOnly="false">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty" />
+      </ExtendedPropertiesCollection>
+      <SystemDataType guid="30053f5a-8d40-4db1-b185-1e4128eb26cc">
+        <StandardIdDataType />
+      </SystemDataType>
+    </property>
+    <property xsi:type="OrmFieldProperty" id="6e4f0b75-fb96-46eb-b200-518d7f2f054a" lastModifiedUtc="2012-04-30T14:05:38.1926445Z" name="Emaddressbookid" audited="false" isNullable="false" columnName="EMADDRESSBOOKID" maxLength="12" precision="0" scale="0" ordinal="1" isReadOnly="false">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty" />
+      </ExtendedPropertiesCollection>
+      <SystemDataType guid="30053f5a-8d40-4db1-b185-1e4128eb26cc">
+        <StandardIdDataType />
+      </SystemDataType>
+    </property>
+    <property xsi:type="OrmFieldProperty" id="8af122c7-efac-4751-81a3-0974160b8364" lastModifiedUtc="2012-04-30T14:05:38.2102215Z" name="CreateUser" audited="false" columnName="CREATEUSER" maxLength="12" precision="0" scale="0" ordinal="2" isReadOnly="false">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty" />
+      </ExtendedPropertiesCollection>
+      <SystemDataType guid="30053f5a-8d40-4db1-b185-1e4128eb26cc">
+        <StandardIdDataType />
+      </SystemDataType>
+    </property>
+    <property xsi:type="OrmFieldProperty" id="0e3da35c-3e4e-46b5-b79d-066f3b3cfb15" lastModifiedUtc="2012-04-30T14:05:38.213151Z" name="CreateDate" audited="false" columnName="CREATEDATE" maxLength="0" precision="0" scale="0" ordinal="3" isReadOnly="false">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty" />
+      </ExtendedPropertiesCollection>
+      <SystemDataType guid="1f08f2eb-87c8-443b-a7c2-a51f590923f5">
+        <DateTimeDataType />
+      </SystemDataType>
+    </property>
+    <property xsi:type="OrmFieldProperty" id="d6cae6ee-777b-43e3-9ce0-27ef8d1da928" lastModifiedUtc="2012-04-30T14:05:38.2160805Z" name="ModifyUser" audited="false" columnName="MODIFYUSER" maxLength="12" precision="0" scale="0" ordinal="4" isReadOnly="false">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty" />
+      </ExtendedPropertiesCollection>
+      <SystemDataType guid="30053f5a-8d40-4db1-b185-1e4128eb26cc">
+        <StandardIdDataType />
+      </SystemDataType>
+    </property>
+    <property xsi:type="OrmFieldProperty" id="bb11179a-9c27-44cb-9d84-c25ca6f71fd6" lastModifiedUtc="2012-04-30T14:05:38.21901Z" name="ModifyDate" audited="false" columnName="MODIFYDATE" maxLength="0" precision="0" scale="0" ordinal="5" isReadOnly="false">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty" />
+      </ExtendedPropertiesCollection>
+      <SystemDataType guid="1f08f2eb-87c8-443b-a7c2-a51f590923f5">
+        <DateTimeDataType />
+      </SystemDataType>
+    </property>
+    <property xsi:type="OrmFieldProperty" id="76b0c4b0-5a03-481f-9755-c913b08d5a78" lastModifiedUtc="2012-04-30T14:05:38.2375635Z" name="SlxMemberType" audited="false" columnName="SLXMEMBERTYPE" maxLength="50" precision="0" scale="0" ordinal="6" isReadOnly="false">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty" />
+      </ExtendedPropertiesCollection>
+      <SystemDataType guid="ccc0f01d-7ba5-408e-8526-a3f942354b3a">
+        <TextDataType>
+          <Length>50</Length>
+        </TextDataType>
+      </SystemDataType>
+    </property>
+    <property xsi:type="OrmFieldProperty" id="678db1a9-18f8-438b-9663-c1cb3876b156" lastModifiedUtc="2012-04-30T14:05:38.2551405Z" name="SlxContactID" audited="false" columnName="SLXCONTACTID" maxLength="12" precision="0" scale="0" ordinal="7" isReadOnly="false">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty" />
+      </ExtendedPropertiesCollection>
+      <SystemDataType guid="30053f5a-8d40-4db1-b185-1e4128eb26cc">
+        <StandardIdDataType />
+      </SystemDataType>
+    </property>
+    <property xsi:type="OrmFieldProperty" id="b0f3ea66-7fd0-4213-bf5c-23e28018a1a8" lastModifiedUtc="2012-04-30T14:05:38.2727175Z" name="SlxLeadID" audited="false" columnName="SLXLEADID" maxLength="12" precision="0" scale="0" ordinal="8" isReadOnly="false">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty" />
+      </ExtendedPropertiesCollection>
+      <SystemDataType guid="30053f5a-8d40-4db1-b185-1e4128eb26cc">
+        <StandardIdDataType />
+      </SystemDataType>
+    </property>
+    <property xsi:type="OrmFieldProperty" id="86526000-42ff-401e-a417-95ad28f7efed" lastModifiedUtc="2012-04-30T14:05:38.2766235Z" name="EmailAddress" audited="false" columnName="EMAILADDRESS" maxLength="100" precision="0" scale="0" ordinal="9" isReadOnly="false">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty" />
+      </ExtendedPropertiesCollection>
+      <SystemDataType guid="ccc0f01d-7ba5-408e-8526-a3f942354b3a">
+        <TextDataType>
+          <Length>100</Length>
+        </TextDataType>
+      </SystemDataType>
+    </property>
+    <property xsi:type="OrmFieldProperty" id="f28c1917-2d5b-46e8-98b3-b19402c5da79" lastModifiedUtc="2012-04-30T14:05:38.2942005Z" name="EmailServiceContactID" audited="false" columnName="EMAILSERVICECONTACTID" maxLength="0" precision="10" scale="0" ordinal="10" isReadOnly="false">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty" />
+      </ExtendedPropertiesCollection>
+      <SystemDataType guid="47f90249-e4c8-4564-9ae6-e1fa9904f8b8">
+        <IntegerDataType />
+      </SystemDataType>
+    </property>
+    <property xsi:type="OrmFieldProperty" id="23bab5f8-fc1f-40a1-8c54-76a11a124859" lastModifiedUtc="2012-04-30T14:05:38.3137305Z" name="DateUnsubscribed" audited="false" columnName="DATEUNSUBSCRIBED" maxLength="0" precision="0" scale="0" ordinal="11" isReadOnly="false">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty" />
+      </ExtendedPropertiesCollection>
+      <SystemDataType guid="1f08f2eb-87c8-443b-a7c2-a51f590923f5">
+        <DateTimeDataType />
+      </SystemDataType>
+    </property>
+    <property xsi:type="OrmFieldProperty" id="5e962656-59ba-45fb-9a42-84bc9b1294f1" lastModifiedUtc="2012-04-30T14:05:38.3313075Z" name="ReasonForUnsubscribing" audited="false" columnName="REASONFORUNSUBSCRIBING" maxLength="250" precision="0" scale="0" ordinal="12" isReadOnly="false">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty" />
+      </ExtendedPropertiesCollection>
+      <SystemDataType guid="ccc0f01d-7ba5-408e-8526-a3f942354b3a">
+        <TextDataType>
+          <Length>250</Length>
+        </TextDataType>
+      </SystemDataType>
+    </property>
+    <property xsi:type="OrmFieldProperty" id="8c4eb318-f9e3-4962-af5e-7f53ff616b75" lastModifiedUtc="2012-05-24T14:09:00.3848605Z" name="EMEmailAccountID" audited="false" columnName="EMEMAILACCOUNTID" maxLength="12" precision="0" scale="0" ordinal="13" isReadOnly="false">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmFieldProperty" />
+      </ExtendedPropertiesCollection>
+      <SystemDataType guid="30053f5a-8d40-4db1-b185-1e4128eb26cc">
+        <StandardIdDataType />
+      </SystemDataType>
+    </property>
+  </properties>
+</entity>

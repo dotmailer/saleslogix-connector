@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<method xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="c159726a-9e39-4a68-ba31-8a8f5b737eda" lastModifiedUtc="2012-04-30T13:28:49.516626Z" name="OnAfterDelete" methodType="CrudEvent" actionType="None" returnMode="None">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmEntityMethod" />
+  </ExtendedPropertiesCollection>
+  <parameter />
+  <preExecuteTargets />
+  <methodTargets>
+    <methodTarget xsi:type="OrmMethodTargetSnippet" id="79a9071d-86aa-4673-b4e9-db5af0570807" lastModifiedUtc="2014-07-18T12:48:11.2774484Z" targetType="Sage.BusinessRules.CodeSnippets.EMAddressBookMemberBusinessRules, Sage.SnippetLibrary.CSharp" targetMethod="OnAfterDeleteStep" active="true" description="Log deletions into deleted items table for subsequent processing/synchronisation" codeSnippetId="422aa5ae-3cbf-4e76-98ca-9ce96a199491">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTargetSnippet" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+  </methodTargets>
+  <postExecuteTargets />
+  <postFlushTargets />
+</method>

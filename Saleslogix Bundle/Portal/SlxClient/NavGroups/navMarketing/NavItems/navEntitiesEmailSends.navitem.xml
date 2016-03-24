@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<NavigationItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="8b1fc8e0-2fb9-43b1-a000-f198bb97f68c">
+  <ItemId>navEntitiesEmailSends</ItemId>
+  <NavUrl>EMEmailCampaignSend.aspx</NavUrl>
+  <LargeImageUrl>[Localization!Global_Images:email_send32]</LargeImageUrl>
+  <SmallImageUrl>[Localization!Global_Images:email_send24]</SmallImageUrl>
+  <ContextMenuId />
+  <Target />
+  <AppliedSecurity>Entities/EMEmailCampaignSend/View</AppliedSecurity>
+</NavigationItem>

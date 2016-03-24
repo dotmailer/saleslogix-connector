@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<relationship xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="f8c0c525-f112-441c-9599-a04ad251fda3" lastModifiedUtc="2012-08-28T10:41:54.4243456Z" parentEntityId="0e311e39-3c2d-4c81-aadd-ee1607eb5924" childEntityId="167224a1-ba6e-483f-80d2-b4629707308a" cascadeOption="SaveUpdateDelete">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmRelationship" />
+  </ExtendedPropertiesCollection>
+  <parentProperty id="77789aac-0df2-4fa6-aa7a-b8851ec262c8" lastModifiedUtc="2012-08-15T16:40:19.6043029Z" name="EMDataMappings" description="" audited="false">
+    <ExtendedPropertiesCollection>
+      <extendee type="Sage.Platform.Orm.Entities.OrmRelationProperty" />
+    </ExtendedPropertiesCollection>
+    <SystemDataType guid="2f770d03-c93c-4605-8ae8-7cdae04830d7">
+      <RelationshipDataType />
+    </SystemDataType>
+  </parentProperty>
+  <childProperty id="e545756f-de1d-4fd1-a2ad-b3edfd105a95" lastModifiedUtc="2012-08-28T10:41:54.4243456Z" name="EMDataLabel" audited="false" isNullable="false">
+    <ExtendedPropertiesCollection>
+      <extendee type="Sage.Platform.Orm.Entities.OrmRelationProperty" />
+    </ExtendedPropertiesCollection>
+    <SystemDataType guid="2f770d03-c93c-4605-8ae8-7cdae04830d7">
+      <RelationshipDataType />
+    </SystemDataType>
+  </childProperty>
+  <column>
+    <OrmRelationshipColumn id="6b127ae2-46ac-48b1-ae75-8f24b966ebbc" parentPropertyId="ebfbe18a-067c-42d1-894c-89bfb40f8235" childPropertyId="34270e0f-28c3-4a02-bb72-1930544b1ac6" ordinal="0" />
+  </column>
+</relationship>

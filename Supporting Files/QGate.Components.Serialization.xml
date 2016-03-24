@@ -1,0 +1,279 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+QGate.Components.Serialization.NonObfuscated
+</name>
+</assembly>
+<members>
+<member name="M:QGate.Components.Serialization.DynamicMembers.SetMember(System.String,System.Int64)">
+	<summary>
+ Set a Dynamic Member to a specified value (or initialize to a value)
+ </summary>
+	<param name="MemberName">Name of the Dynamic Member</param>
+	<param name="MemberValue">Value to set for the Dynamic Member</param>
+	<returns>Previous value (if exists)</returns>
+	<remarks></remarks>
+</member><member name="M:QGate.Components.Serialization.DynamicMembers.InspectMember(System.String)">
+	<summary>
+ Inspects the value of a specified Dynamic Member (without increment)
+ </summary>
+	<param name="MemberName">Name of the Dynamic Member</param>
+	<returns>The value of the Member</returns>
+	<remarks></remarks>
+</member><member name="M:QGate.Components.Serialization.DynamicMembers.GetNextMember(System.String)">
+	<summary>
+ Get the next value for a specified Dynamic Member (and auto increments)
+ </summary>
+	<param name="MemberName">Name of the Dynamic Member</param>
+	<returns>The value of the Member</returns>
+	<remarks></remarks>
+</member><member name="M:QGate.Components.Serialization.DynamicMembers.CheckExists(System.String)">
+	<summary>
+ Checks the existance of a specified Dynamic Member
+ </summary>
+	<param name="MemberName">Name of the Dynamic Member</param>
+	<returns>True or false of its existance</returns>
+	<remarks></remarks>
+</member><member name="F:QGate.Components.Serialization.MemberValueProtection.Auto">
+	<summary>Automatically decide if a value should be protected.</summary>
+</member><member name="F:QGate.Components.Serialization.MemberValueProtection.Protected">
+	<summary>Value will be protected.</summary>
+</member><member name="F:QGate.Components.Serialization.MemberValueProtection.Unprotected">
+	<summary>Value will not be protected.</summary>
+</member><member name="T:QGate.Components.Serialization.MemberValueProtection">
+	<summary>Denotes if a member value will be protected.</summary>
+	<remarks></remarks>
+</member><member name="M:QGate.Components.Serialization.FactoryInstanceEnvironment.SetStaticDBConnection(System.Data.SqlClient.SqlConnection@)">
+	<summary>
+ (Legacy): This method provides a means of setting a static single DB connection (legacy - none pooling)
+ </summary>
+	<param name="dbConnection">An active database connection</param>
+	<remarks></remarks>
+</member><member name="M:QGate.Components.Serialization.FactoryInstanceEnvironment.GetDBConnection">
+	<summary>
+ This method provides a new database connection to facilitate connection pooling.
+ </summary>
+	<returns>New SqlClient Sql Connection object (connected)</returns>
+	<remarks>Care should be given to ensure this connection is disposed of after use.</remarks>
+</member><member name="M:QGate.Components.Serialization.SerializerDBDefinition.#ctor(System.String,System.String)">
+	<summary>
+ This constructor creates a database definition using Windows Authentication
+ </summary>
+	<param name="ServerName">Name of the Server machine</param>
+	<param name="Database">Name of the databasePlatform</param>
+	<remarks></remarks>
+</member><member name="M:QGate.Components.Serialization.SerializerDBDefinition.#ctor(System.String,System.String,QGate.Components.Serialization.DatabasePlatform)">
+	<summary>
+ This constructor creates a database definition using Windows Authentication
+ </summary>
+	<param name="ServerName">Name of the Server machine</param>
+	<param name="Database">Name of the databasePlatform</param>
+	<param name="Platform">The database platform to connect to</param>
+	<remarks></remarks>
+</member><member name="M:QGate.Components.Serialization.SerializerDBDefinition.#ctor(System.String,System.String,System.String,System.String)">
+	<summary>
+ This constructor creates a database definition using specific user Authentication
+ </summary>
+	<param name="ServerName">Name of the Server machine</param>
+	<param name="Database">Name of the databasePlatform</param>
+	<remarks></remarks>
+</member><member name="M:QGate.Components.Serialization.SerializerDBDefinition.#ctor(System.String,System.String,System.String,System.String,QGate.Components.Serialization.DatabasePlatform)">
+	<summary>
+ This constructor creates a database definition using specific user Authentication
+ </summary>
+	<param name="ServerName">Name of the Server machine</param>
+	<param name="Database">Name of the databasePlatform</param>
+	<param name="Platform">The database platform to connect to</param>
+	<remarks></remarks>
+</member><member name="P:QGate.Components.Serialization.SerializerDBDefinition.ServerName">
+	<summary>Name of the database server</summary>
+</member><member name="P:QGate.Components.Serialization.SerializerDBDefinition.Database">
+	<summary>Name of the database</summary>
+</member><member name="P:QGate.Components.Serialization.SerializerDBDefinition.UserID">
+	<summary>Database server user account</summary>
+</member><member name="P:QGate.Components.Serialization.SerializerDBDefinition.Password">
+	<summary>Database server user account password</summary>
+</member><member name="P:QGate.Components.Serialization.SerializerDBDefinition.AuthenticationType">
+	<summary>Type of user authentication to use to connect to the database server</summary>
+</member><member name="P:QGate.Components.Serialization.SerializerDBDefinition.Platform">
+	<summary>The database platform of the server</summary>
+</member><member name="P:QGate.Components.Serialization.SerializerDBDefinition.ConnectionApplicationName">
+	<summary>(Optional) The name of the application using the connection</summary>
+</member><member name="P:QGate.Components.Serialization.SerializerDBDefinition.ConnectionPooling">
+	<summary>Denotes if connection pooling is enabled</summary>
+</member><member name="M:QGate.Components.Serialization.Factory.DefineStorage(QGate.Components.Serialization.SerializerDBDefinition,System.String,System.String,System.String)">
+	<summary>
+ Define the storage database mechanism for the Serializer factory.
+ </summary>
+	<param name="Database">A Database definition (connection information) for the serializer to pool</param>
+	<param name="DefinitionsTable">Name of the database table containing the serialized ORM'd definitions</param>
+	<param name="DynamicMembersTable">Name of the database table containing the serialized dynamic member data</param>
+	<param name="SessionUserID">Serializer session ID for auditing transactions</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:QGate.Components.Serialization.Factory.DefineStorage(System.Data.SqlClient.SqlConnection@,System.String,System.String,System.String)">
+	<summary>
+ Define the storage mechanism for the Serializer factory.
+ </summary>
+	<param name="DBConnection"></param>
+	<param name="DefinitionsTable"></param>
+	<param name="SessionUserID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:QGate.Components.Serialization.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:QGate.Components.Serialization.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:QGate.Components.Serialization.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:QGate.Components.Serialization.Serializer.Definition">
+	<summary>Provides access to the Serializer object definition.</summary>
+</member><member name="P:QGate.Components.Serialization.Serializer.RecordRevisionHistory">
+	<summary>Boolean value denoting if this Serializer should record revision history.</summary>
+</member><member name="M:QGate.Components.Serialization.Serializer.Load(System.Int64)">
+	<summary>Loads a serialized definition into the Serializer.</summary>
+	<param name="DefinitionID">The ID of the definition to load.</param>
+	<returns>The ID of the successfully loaded Definition.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.Load(System.Xml.XmlDocument)">
+	<param name="XMLDefinition">An XML Document containing the definition to load.</param>
+	<returns>The ID of the successfully loaded Definition.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.Load(System.Xml.XmlDocument,System.Boolean)">
+	<param name="XMLDefinition">An XML Document containing the definition to load.</param>
+	<param name="NewDefintion">Denotes if the definition is a new definition (e.g. being imported)</param>
+	<returns>The ID of the successfully loaded Definition.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.Save">
+	<summary>Saves the current definition held within the Serializer.</summary>
+	<returns>The ID of the successfully saved Definition.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.Save(System.String)">
+	<summary>Saves the current definition held within the Serializer.</summary>
+	<param name="RevisionComment">An optional comment to be placed in the revision history.</param>
+	<returns>The ID of the successfully saved Definition.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.Save(System.Boolean)">
+	<summary>Saves the current definition held within the Serializer.</summary>
+	<param name="UpdateRevision">Update Revision will temporarily enable/disable Revision History recording for this save operation.</param>
+	<returns>The ID of the successfully saved Definition.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.Save(System.Boolean,System.String)">
+	<summary>Saves the current definition held within the Serializer.</summary>
+	<param name="UpdateRevision">Update Revision will temporarily enable/disable Revision History recording for this save operation.</param>
+	<param name="RevisionComment">An optional comment to be placed in the revision history.</param>
+	<returns>The ID of the successfully saved Definition.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.RestoreHistoricDefinition(System.Xml.XmlDocument@)">
+	<summary>Restores the Serializer with an XML Document containing an historic definition of the object.</summary>
+	<param name="XMLDefinition">XML Document containing the historic definition.</param>
+	<remarks>This element should be used when serializing Object Collection items, as collection items are completely replaced within the XML Document.  
+ The historic XML Document to post back can be acquired from the "RestoreObject" Serializer Interface method.</remarks>
+</member><member name="M:QGate.Components.Serialization.Serializer.RestoreObject">
+	<summary>Request the Serializer to restore the current serialized object.</summary>
+</member><member name="M:QGate.Components.Serialization.Serializer.PutMember(System.String,System.Object)">
+	<summary>Place an object member (field, object, collection, valuelist) value into the Serializer for serialization.</summary>
+	<param name="MemberName">The member name (Tag) of the member to be stored.</param>
+	<param name="MemberValue">The member value of the member to be stored.</param>
+	<returns>ENum MemberStorageRC containing the result of the operation.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.PutMember(System.String,System.Object,QGate.Components.Serialization.MemberType)">
+	<param name="MemberName">The member name (Tag) of the member to be stored.</param>
+	<param name="MemberValue">The member value of the member to be stored.</param>
+	<param name="MemberType">The type of member value being stored (the default is FieldProperty).</param>
+</member><member name="M:QGate.Components.Serialization.Serializer.PutMember(System.String,System.Object,QGate.Components.Serialization.MemberType,QGate.Components.Serialization.MemberValueProtection)">
+	<param name="MemberName">The member name (Tag) of the member to be stored.</param>
+	<param name="MemberValue">The member value of the member to be stored.</param>
+	<param name="MemberType">The type of member value being stored (the default is FieldProperty).</param>
+	<param name="ValueProtection">Denotes if the member value should be protected (XML CData tagged).</param>
+</member><member name="M:QGate.Components.Serialization.Serializer.PutMember(System.String,System.Object,QGate.Components.Serialization.MemberType,QGate.Components.Serialization.MemberValueProtection,System.Boolean)">
+	<param name="MemberName">The member name (Tag) of the member to be stored.</param>
+	<param name="MemberValue">The member value of the member to be stored.</param>
+	<param name="MemberType">The type of member value being stored (the default is FieldProperty).</param>
+	<param name="ValueProtection">Denotes if the member value should be protected (XML CData tagged).</param>
+	<param name="Encrypt">Denotes if the member value should be encrypted within the XML.</param>
+</member><member name="M:QGate.Components.Serialization.Serializer.GetMember``1(System.String)">
+	<summary>Retrieve an object member value (field, object) of Type T from the Serializer.</summary>
+	<typeparam name="T">The System Type of the member you wish to get.</typeparam>
+	<param name="MemberName">The name (Tag) of the member to retrieve.</param>
+	<returns>The value is return as an specified System Type.</returns>
+	<remarks>This method is now deemed Refactor safe and has replaced all previous method overloads.</remarks>
+</member><member name="M:QGate.Components.Serialization.Serializer.GetMember``1(System.String,System.Object)">
+	<summary>Retrieve an object member value (field, object) of Type T from the Serializer.</summary>
+	<typeparam name="T">The System Type of the member you wish to get.</typeparam>
+	<param name="MemberName">The name (Tag) of the member to retrieve.</param>
+	<param name="DefaultValue">Denotes a default value to return should the specified member not exist.</param>
+	<returns>The value is return as an specified System Type.</returns>
+	<remarks>This method is now deemed Refactor safe and has replaced all previous method overloads.</remarks>
+</member><member name="M:QGate.Components.Serialization.Serializer.GetMemberBinary(System.String)">
+	<summary>Retrieve an object member of Binary data from the Serializer.</summary>
+	<param name="MemberName">The name (Tag) of the member to retrieve.</param>
+	<returns>The value is return as an array of Bytes.</returns>
+	<remarks>This method is now deemed Refactor safe and has replaced all previous method overloads.</remarks>
+</member><member name="M:QGate.Components.Serialization.Serializer.GetMemberBinary(System.String,System.Byte[])">
+	<summary>Retrieve an object member of Binary data from the Serializer.</summary>
+	<param name="MemberName">The name (Tag) of the member to retrieve.</param>
+	<param name="DefaultValue">Denotes a default value to return should the specified member not exist.</param>
+	<returns>The value is return as an array of Bytes.</returns>
+	<remarks>This method is now deemed Refactor safe and has replaced all previous method overloads.</remarks>
+</member><member name="M:QGate.Components.Serialization.Serializer.GetMember(System.String)">
+	<summary>Retrieve an object member (field, object) value from the Serializer.</summary>
+	<param name="MemberName">The name of the member to retrieve.</param>
+	<returns>The value is return as an object.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.GetMember(System.String,System.Object)">
+	<param name="MemberName">The name (Tag) of the member to retrieve.</param>
+	<param name="DefaultValue">Denotes a default value to return should the specified member not exist.</param>
+	<returns>The value is return as an object.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.GetMember(System.String,System.Object,System.String)">
+	<param name="MemberName">The name (Tag) of the member to retrieve.</param>
+	<param name="DefaultValue">Denotes a default value to return should the specified member not exist.</param>
+	<param name="Namespace">Denotes the name of the Application Namespace used to rebuild the Serialized object.</param>
+	<returns>The value is return as an object.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.GetMemberCollection``1(System.String,System.Collections.Generic.List{``0}@)">
+	<summary>Retrieve an object member collection from the Serializer.</summary>
+	<param name="MemberName">The name (Tag) of the member Collection to retrieve.</param>
+	<param name="CollectionToPopulate">The object collection to be populated during the retrieval.</param>
+	<returns>The number of items in the collection retrieved.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.GetMemberCollection``1(System.String,System.Collections.Generic.List{``0}@,System.String)">
+	<summary>Retrieve an object member collection from the Serializer.</summary>
+	<param name="MemberName">The name (Tag) of the member Collection to retrieve.</param>
+	<param name="CollectionToPopulate">The object collection to be populated during the retrieval.</param>
+	<param name="Namespace">Denotes the name of the Application Namespace used to rebuild the Serialized object Collection.</param>
+	<returns>The number of items in the collection retrieved.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.GetMemberCollectionReturned``1(System.String)">
+	<summary>Retrieve an object member collection from the Serializer.</summary>
+	<param name="MemberName">The name (Tag) of the member Collection to retrieve.</param>
+	<returns>The number of items in the collection retrieved.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.GetMemberCollectionReturned``1(System.String,System.String)">
+	<summary>Retrieve an object member collection from the Serializer.</summary>
+	<param name="MemberName">The name (Tag) of the member Collection to retrieve.</param>
+	<param name="Namespace">Denotes the name of the Application Namespace used to rebuild the Serialized object Collection.</param>
+	<returns>The number of items in the collection retrieved.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.GetMemberValuesList``1(System.String,System.Collections.Generic.List{``0}@)">
+	<summary>Retrieve an object member ValueList from the Serializer.</summary>
+	<param name="MemberName">The name (Tag) of the member ValueList to retrieve.</param>
+	<param name="ListToPopulate">The ValueList (Collection) to be populated during the retrieval.</param>
+	<returns>The number of items in the collection retrieved.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.GetMemberValuesList``1(System.String,System.Collections.Generic.List{``0}@,System.String)">
+	<summary>Retrieve an object member ValueList from the Serializer.</summary>
+	<param name="MemberName">The name (Tag) of the member ValueList to retrieve.</param>
+	<param name="ListToPopulate">The ValueList (Collection) to be populated during the retrieval.</param>
+	<param name="Namespace">Denotes the name of the Application Namespace used to rebuild the Serialized Value List.</param>
+	<returns>The number of items in the collection retrieved.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.GetMemberValuesListReturned``1(System.String)">
+	<summary>Retrieve an object member ValueList from the Serializer.</summary>
+	<param name="MemberName">The name (Tag) of the member ValueList to retrieve.</param>
+	<returns>The number of items in the collection retrieved.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.GetMemberValuesListReturned``1(System.String,System.String)">
+	<summary>Retrieve an object member ValueList from the Serializer.</summary>
+	<param name="MemberName">The name (Tag) of the member ValueList to retrieve.</param>
+	<param name="Namespace">Denotes the name of the Application Namespace used to rebuild the Serialized Value List.</param>
+	<returns>The number of items in the collection retrieved.</returns>
+</member><member name="M:QGate.Components.Serialization.Serializer.DeleteMember(System.String)">
+	<summary>Delete a specified member from within the Serializer.</summary>
+	<param name="MemberName">The name of the member to delete.</param>
+</member><member name="M:QGate.Components.Serialization.Serializer.DeleteAllMembers">
+	<summary>Delete all members within the Serializer.</summary>
+</member>
+</members>
+</doc>

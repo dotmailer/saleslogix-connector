@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<method xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="f67a3494-aaba-409a-be7b-b1647e6d6788" lastModifiedUtc="2012-04-25T12:37:32.250347Z" name="OnBeforeInsert" methodType="CrudEvent" actionType="None" returnMode="None">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmEntityMethod" />
+  </ExtendedPropertiesCollection>
+  <parameter />
+  <preExecuteTargets />
+  <methodTargets>
+    <methodTarget id="002ae436-4e44-4c58-8ebe-15cd09de5aee" lastModifiedUtc="2012-04-25T12:37:32.158556Z" targetType="Sage.Platform.Orm.DefaultCRUDEventHandler, Sage.Platform" targetMethod="OnBeforeInsert" active="true">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTarget" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+  </methodTargets>
+  <postExecuteTargets>
+    <methodTarget xsi:type="OrmMethodTargetSnippet" id="049fb851-6e3e-4ac6-a1ae-b4535925146e" lastModifiedUtc="2014-01-14T10:58:38.8033953Z" targetType="Sage.BusinessRules.CodeSnippets.EMAddressBookBusinessRules, Sage.SnippetLibrary.CSharp" targetMethod="OnBeforeInsertStep" active="true" codeSnippetId="d62c6ff9-37d3-4f2c-a31c-4a853c7d04bb">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTargetSnippet" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+  </postExecuteTargets>
+  <postFlushTargets />
+</method>

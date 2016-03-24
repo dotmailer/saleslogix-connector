@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<NavigationItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="4c9f6408-700b-482a-9727-c7570382011b">
+  <ItemId>navEmailAccount</ItemId>
+  <NavUrl>EMEmailAccount.aspx</NavUrl>
+  <LargeImageUrl>[Localization!Global_Images:email_account32]</LargeImageUrl>
+  <SmallImageUrl>[Localization!Global_Images:email_account24]</SmallImageUrl>
+  <ContextMenuId>contextEmailAccount</ContextMenuId>
+  <Target />
+  <AppliedSecurity>Entities/EMEmailAccount/View</AppliedSecurity>
+</NavigationItem>

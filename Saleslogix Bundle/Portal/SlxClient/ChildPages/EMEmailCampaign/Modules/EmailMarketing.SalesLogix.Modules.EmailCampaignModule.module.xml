@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<WebModule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="72fac183-148a-42ab-b5dd-7649eea7fd27">
+  <InstanceId>b667d039afb7444bbbb4001181b8a687</InstanceId>
+  <ModuleTypeName>EmailMarketing.SalesLogix.Modules.EmailCampaignModule, EmailMarketingModules</ModuleTypeName>
+  <RunInMode>Detail, List</RunInMode>
+  <AllowRoles>Email Marketing Administrator, Email Marketing User</AllowRoles>
+  <Scope>Page</Scope>
+</WebModule>

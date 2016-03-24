@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0EBBAFBF-BFCF-4CCE-9B37-542A300F2958}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EmailMarketing.SalesLogix</RootNamespace>
+    <AssemblyName>EmailMarketingService</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>esc_campaign.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dotMailer.Sdk">
+      <HintPath>..\Supporting Files\dotMailer.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="QGate.Components.Serialization">
+      <HintPath>..\Supporting Files\QGate.Components.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Sage.SData.Client, Version=1.2.2.1335, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SDataCSharpClientLib.1.2.2.1335\lib\Net35\Sage.SData.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Exceptions\EmailAccountSynchronisationException.cs" />
+    <Compile Include="Exceptions\EmailAddressBookMemberSynchronisationException.cs" />
+    <Compile Include="Exceptions\EmailCampaignHeaderSynchronisationException.cs" />
+    <Compile Include="Exceptions\EmailCampaignsFailedToSyncActivityException.cs" />
+    <Compile Include="SalesLogix\DisposeHelper.cs" />
+    <Compile Include="EmailCampaignActivitySynchroniser.cs" />
+    <Compile Include="EmailAddressBookSynchroniser.cs" />
+    <Compile Include="dotMailer\DotMailerConnector.cs" />
+    <Compile Include="dotMailer\IDotMailerConnector.cs" />
+    <Compile Include="EmailCampaignSender.cs" />
+    <Compile Include="EmailMarketingService.cs" />
+    <Compile Include="EmailMarketingServiceController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EmailMarketingServiceController.Designer.cs">
+      <DependentUpon>EmailMarketingServiceController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\EmailCampaignClick.cs" />
+    <Compile Include="Entity\SlxCampaignTarget.cs" />
+    <Compile Include="Entity\SlxUser.cs" />
+    <Compile Include="Entity\History.cs" />
+    <Compile Include="Entity\HistoryType.cs" />
+    <Compile Include="Entity\SlxLead.cs" />
+    <Compile Include="Entity\SlxContact.cs" />
+    <Compile Include="Entity\EmailSuppression.cs" />
+    <Compile Include="Entity\EmailAddressBookUnsubscriber.cs" />
+    <Compile Include="Entity\EmailCampaignAddressBookLink.cs" />
+    <Compile Include="Entity\EmailCampaignSendSummary.cs" />
+    <Compile Include="Entity\EmailCampaignSend.cs" />
+    <Compile Include="Entity\SyncTask.cs" />
+    <Compile Include="Entity\DataFieldMapping.cs" />
+    <Compile Include="Entity\DataLabel.cs" />
+    <Compile Include="Entity\EmailAddressBookMember.cs" />
+    <Compile Include="Entity\EmailAddressBook.cs" />
+    <Compile Include="Entity\DeletedItem.cs" />
+    <Compile Include="Entity\EmailAccount.cs" />
+    <Compile Include="Entity\EmailServiceContact.cs" />
+    <Compile Include="Entity\Entity.cs" />
+    <Compile Include="Entity\SchemaNameAttribute.cs" />
+    <Compile Include="LoggingHelper.cs" />
+    <Compile Include="ObjectFactory.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entity\EmailCampaign.cs" />
+    <Compile Include="SalesLogix\KeyEntityNotFoundException.cs" />
+    <Compile Include="SalesLogix\EntityNotFoundException.cs" />
+    <Compile Include="SalesLogix\ISlxConnector.cs" />
+    <Compile Include="SalesLogix\ISlxSdata.cs" />
+    <Compile Include="SalesLogix\QueryEntityType.cs" />
+    <Compile Include="SalesLogix\SaleslogixRecordUpdater.cs" />
+    <Compile Include="SalesLogix\SdataEntityParser.cs" />
+    <Compile Include="SalesLogix\SlxCampaignSynchroniser.cs" />
+    <Compile Include="SalesLogix\SlxConnector.cs" />
+    <Compile Include="SalesLogix\SlxSdata.cs" />
+    <Compile Include="Exceptions\SlxCampaignSynchroniserException.cs" />
+    <Compile Include="SplitTestMetric.cs" />
+    <Compile Include="Exceptions\SynchronisationException.cs" />
+    <Compile Include="Synchroniser.cs" />
+    <Compile Include="Tasks\CampaignMapper.cs" />
+    <Compile Include="Tasks\CampaignSendData.cs" />
+    <Compile Include="Tasks\SalesLogixDeletionScanRunnable.cs" />
+    <Compile Include="Tasks\SyncToSlxCampaignsRunnable.cs" />
+    <Compile Include="Tasks\DeletedAddressBookDetails.cs" />
+    <Compile Include="Tasks\DeletedLabelDetails.cs" />
+    <Compile Include="Tasks\DeletedMemberDetails.cs" />
+    <Compile Include="Tasks\SalesLogixUserTasksRunnable.cs" />
+    <Compile Include="Tasks\SyncToEmailServiceRunnable.cs" />
+    <Compile Include="Tasks\IRunnable.cs" />
+    <Compile Include="Tasks\IScheduledTask.cs" />
+    <Compile Include="Tasks\TaskRunnerStatus.cs" />
+    <Compile Include="Tasks\ScheduledTask.cs" />
+    <Compile Include="Tasks\SyncType.cs" />
+    <Compile Include="Tasks\ScheduledTaskRunner.cs" />
+    <Compile Include="SDataClientExceptionLogger.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EmailMarketingServiceController.resx">
+      <DependentUpon>EmailMarketingServiceController.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConfigAndServiceCommon\ConfigAndServiceCommon.csproj">
+      <Project>{4dfe8f90-50c2-4181-a73a-5cc806be32db}</Project>
+      <Name>ConfigAndServiceCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="esc_campaign.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dotMailerSdkDocuments\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

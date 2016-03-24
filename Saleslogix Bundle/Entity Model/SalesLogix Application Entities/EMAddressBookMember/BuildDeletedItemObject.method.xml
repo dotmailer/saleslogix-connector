@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<method xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="0a109670-3b89-4bff-8e25-a433fafd6365" lastModifiedUtc="2014-07-18T12:46:43.2149484Z" name="BuildDeletedItemObject" returnType="IEMDeletedItem" methodType="Rule" actionType="None" returnMode="Object">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmEntityMethod" />
+  </ExtendedPropertiesCollection>
+  <parameter />
+  <preExecuteTargets />
+  <methodTargets>
+    <methodTarget xsi:type="OrmMethodTargetSnippet" id="c0284868-6b9b-484e-95fe-6a94e5e3bccf" lastModifiedUtc="2014-07-18T12:46:00.2930734Z" targetType="Sage.BusinessRules.CodeSnippets.EMAddressBookMemberBusinessRules, Sage.SnippetLibrary.CSharp" targetMethod="BuildDeletedItemObjectStep" active="true" codeSnippetId="5f666f72-c822-4f75-8a7d-b6f60b22e8dd">
+      <ExtendedPropertiesCollection>
+        <extendee type="Sage.Platform.Orm.Entities.OrmMethodTargetSnippet" />
+      </ExtendedPropertiesCollection>
+    </methodTarget>
+  </methodTargets>
+  <postExecuteTargets />
+  <postFlushTargets />
+</method>

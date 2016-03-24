@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="hrDeliverySummary.Caption" xml:space="preserve">
+    <value>Delivery Summary</value>
+  </data>
+  <data name="hrClicksSummary.Caption" xml:space="preserve">
+    <value>Clicks Summary</value>
+  </data>
+  <data name="hrOpenSummary.Caption" xml:space="preserve">
+    <value>Open Summary</value>
+  </data>
+  <data name="hrBouncedSummary.Caption" xml:space="preserve">
+    <value>Bounced Summary</value>
+  </data>
+  <data name="hrBlockedSummary.Caption" xml:space="preserve">
+    <value>Blocked Summary</value>
+  </data>
+  <data name="hrForwardsSummary.Caption" xml:space="preserve">
+    <value>Forwards Summary</value>
+  </data>
+  <data name="hrReplySummary.Caption" xml:space="preserve">
+    <value>Reply Summary</value>
+  </data>
+  <data name="hrUnsubscribesSummary.Caption" xml:space="preserve">
+    <value>Unsubscribes Summary</value>
+  </data>
+  <data name="hrComplaintSummary.Caption" xml:space="preserve">
+    <value>Complaint Summary</value>
+  </data>
+  <data name="hrPageViewsSummary.Caption" xml:space="preserve">
+    <value>Page Views Summary</value>
+  </data>
+  <data name="txtNumSentHtml.Caption" xml:space="preserve">
+    <value>Number Sent (html):</value>
+  </data>
+  <data name="txtNumSentText.Caption" xml:space="preserve">
+    <value>Number Sent (text):</value>
+  </data>
+  <data name="txtTotalSent.Caption" xml:space="preserve">
+    <value>Total Sent:</value>
+  </data>
+  <data name="txtNumDeliveredHtml.Caption" xml:space="preserve">
+    <value>Number Delivered (html):</value>
+  </data>
+  <data name="txtNumDeliveredText.Caption" xml:space="preserve">
+    <value>Number Delivered (text):</value>
+  </data>
+  <data name="txtTotalDelivered.Caption" xml:space="preserve">
+    <value>Total Delivered</value>
+  </data>
+  <data name="txtDeliveredRate.Caption" xml:space="preserve">
+    <value>Delivered Rate (%):</value>
+  </data>
+  <data name="txtNumClicksHtml.Caption" xml:space="preserve">
+    <value>Number Clicks (html):</value>
+  </data>
+  <data name="txtNumClicksText.Caption" xml:space="preserve">
+    <value>Number Clicks (text):</value>
+  </data>
+  <data name="txtNumRecipientsClicked.Caption" xml:space="preserve">
+    <value>Number Recipients Clicked:</value>
+  </data>
+  <data name="txtUserClickRate.Caption" xml:space="preserve">
+    <value>User Click Rate (%):</value>
+  </data>
+  <data name="txtTotalClicks.Caption" xml:space="preserve">
+    <value>Total Clicks:</value>
+  </data>
+  <data name="txtClickRate.Caption" xml:space="preserve">
+    <value>Click Rate (%):</value>
+  </data>
+  <data name="txtNumOpensHtml.Caption" xml:space="preserve">
+    <value>Number Opens (html):</value>
+  </data>
+  <data name="txtNumOpensText.Caption" xml:space="preserve">
+    <value>Number Opens (text):</value>
+  </data>
+  <data name="txtNumUniqueOpensHtml.Caption" xml:space="preserve">
+    <value>Number Unique Opens (html):</value>
+  </data>
+  <data name="txtNumUniqueOpensText.Caption" xml:space="preserve">
+    <value>Number Unique Opens (text):</value>
+  </data>
+  <data name="txtTotalOpens.Caption" xml:space="preserve">
+    <value>Total Opens:</value>
+  </data>
+  <data name="txtOpenRate.Caption" xml:space="preserve">
+    <value>Open Rate (%):</value>
+  </data>
+  <data name="txtTotalUniqueOpens.Caption" xml:space="preserve">
+    <value>Total Unique Opens:</value>
+  </data>
+  <data name="txtUniqueOpenRate.Caption" xml:space="preserve">
+    <value>Unique Open Rate (%):</value>
+  </data>
+  <data name="txtNumHardBouncesHtml.Caption" xml:space="preserve">
+    <value>Number Hard Bounces (html):</value>
+  </data>
+  <data name="txtNumHardBouncesText.Caption" xml:space="preserve">
+    <value>Number Hard Bounces (text):</value>
+  </data>
+  <data name="txtNumSoftBouncesHtml.Caption" xml:space="preserve">
+    <value>Number Soft Bounces (html):</value>
+  </data>
+  <data name="txtNumSoftBouncesText.Caption" xml:space="preserve">
+    <value>Number Soft Bounces (text):</value>
+  </data>
+  <data name="txtTotalHardBounces.Caption" xml:space="preserve">
+    <value>Total Hard Bounces:</value>
+  </data>
+  <data name="txtHardBounceRate.Caption" xml:space="preserve">
+    <value>Hard Bounce Rate (%):</value>
+  </data>
+  <data name="txtTotalSoftBounces.Caption" xml:space="preserve">
+    <value>Total Soft Bounces:</value>
+  </data>
+  <data name="txtSoftBounceRate.Caption" xml:space="preserve">
+    <value>Soft Bounce Rate (%):</value>
+  </data>
+  <data name="txtNumBlockedMailsHtml.Caption" xml:space="preserve">
+    <value>Number Blocked Mails (html):</value>
+  </data>
+  <data name="txtNumBlockedMailsText.Caption" xml:space="preserve">
+    <value>Number Blocked Mails (text):</value>
+  </data>
+  <data name="txtTotalBlockedMails.Caption" xml:space="preserve">
+    <value>Total Blocked Mails:</value>
+  </data>
+  <data name="txtNumForwardsHtml.Caption" xml:space="preserve">
+    <value>Number Forwards (html):</value>
+  </data>
+  <data name="txtNumForwardsText.Caption" xml:space="preserve">
+    <value>Number Forwards (text):</value>
+  </data>
+  <data name="txtNumEstimatedForwardsHtml.Caption" xml:space="preserve">
+    <value>Number Estimated Forwards (html):</value>
+  </data>
+  <data name="txtNumEstimatedForwardsText.Caption" xml:space="preserve">
+    <value>Number Estimated Forwards (text):</value>
+  </data>
+  <data name="txtTotalForwardsEstimated.Caption" xml:space="preserve">
+    <value>Total Forwards (Estimated):</value>
+  </data>
+  <data name="txtNumRepliesHtml.Caption" xml:space="preserve">
+    <value>Number Replies (html):</value>
+  </data>
+  <data name="txtNumReplies.Caption" xml:space="preserve">
+    <value>Number Replies (text):</value>
+  </data>
+  <data name="txtTotalReplies.Caption" xml:space="preserve">
+    <value>Total Replies:</value>
+  </data>
+  <data name="txtReplyRate.Caption" xml:space="preserve">
+    <value>Reply Rate (%):</value>
+  </data>
+  <data name="txtNumUnsubscribesHtml.Caption" xml:space="preserve">
+    <value>Number Unsubscribes (html):</value>
+  </data>
+  <data name="txtNumUnsubscribesText.Caption" xml:space="preserve">
+    <value>Number Unsubscribes (text):</value>
+  </data>
+  <data name="txtTotalUnsubscribes.Caption" xml:space="preserve">
+    <value>Total Unsubscribes:</value>
+  </data>
+  <data name="txtUnsubscribeRate.Caption" xml:space="preserve">
+    <value>Unsubscribe Rate (%):</value>
+  </data>
+  <data name="txtNumISPComplaintsHtml.Caption" xml:space="preserve">
+    <value>Number ISP Complaints (html):</value>
+  </data>
+  <data name="txtNumISPComplaintsText.Caption" xml:space="preserve">
+    <value>Number ISP Complaints (text):</value>
+  </data>
+  <data name="txtTotalISPComplaints.Caption" xml:space="preserve">
+    <value>Total ISP Complaints:</value>
+  </data>
+  <data name="txtNumPageViewsHtml.Caption" xml:space="preserve">
+    <value>Number Page Views (html):</value>
+  </data>
+  <data name="txtNumPageViewsText.Caption" xml:space="preserve">
+    <value>Number Page Views (text):</value>
+  </data>
+  <data name="txtTotalPageViews.Caption" xml:space="preserve">
+    <value>Total Page Views:</value>
+  </data>
+  <data name="hrSentSummary.Caption" xml:space="preserve">
+    <value>Sent Summary</value>
+  </data>
+</root>

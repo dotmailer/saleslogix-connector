@@ -1,0 +1,49 @@
+﻿<log4net>
+  <appender name="ColoredConsoleAppender" type="log4net.Appender.ColoredConsoleAppender">
+    <mapping>
+      <level value="ERROR" />
+      <foreColor value="White" />
+      <backColor value="Red, HighIntensity" />
+    </mapping>
+    <mapping>
+      <level value="WARN" />
+      <foreColor value="Yellow" />
+    </mapping>
+    <mapping>
+      <level value="DEBUG" />
+      <foreColor value="Green" />
+    </mapping>
+    <mapping>
+      <level value="INFO" />
+      <foreColor value="White" />
+    </mapping>
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%utcdate [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+
+  <appender name="RollingFileAppender" type="log4net.Appender.RollingFileAppender">
+    <file value="C:\50LinkLog.txt" />
+    <appendToFile value="true" />
+    <rollingStyle value="Size" />
+    <maxSizeRollBackups value="10" />
+    <maximumFileSize value="10MB" />
+    <staticLogFileName value="true" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%utcdate [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+
+  <appender name="EventLog" type="log4net.Appender.EventLogAppender">
+    <applicationName value="intelli-CTiDeviceClientDriver" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%utcdate [%thread] %-5level %logger [%property{NDC}] - %message%newline" />
+    </layout>
+  </appender>
+
+  <root>
+    <level value="DEBUG" />
+    <!-- Possible Values: ALL, DEBUG, INFO, WARN, ERROR, FATAL, OFF -->
+    <appender-ref ref="ColoredConsoleAppender" />
+  </root>
+</log4net>

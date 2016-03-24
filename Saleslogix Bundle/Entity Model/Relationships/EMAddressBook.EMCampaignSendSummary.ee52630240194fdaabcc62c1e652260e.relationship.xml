@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<relationship xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="ee526302-4019-4fda-abcc-62c1e652260e" lastModifiedUtc="2012-08-23T11:24:20.2585672Z" parentEntityId="a891c6f1-9472-45df-bea8-b7aada232891" childEntityId="cdbcafc6-3289-448e-b4b5-b321912b1908">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmRelationship" />
+  </ExtendedPropertiesCollection>
+  <parentProperty id="04069749-3c36-40d5-bf6c-6a8086c45c9d" lastModifiedUtc="2012-05-24T14:59:25.7574025Z" name="EMCampaignSendSummaries" audited="false">
+    <ExtendedPropertiesCollection>
+      <extendee type="Sage.Platform.Orm.Entities.OrmRelationProperty" />
+    </ExtendedPropertiesCollection>
+    <SystemDataType guid="2f770d03-c93c-4605-8ae8-7cdae04830d7">
+      <RelationshipDataType />
+    </SystemDataType>
+  </parentProperty>
+  <childProperty id="6a122055-ff15-4eef-88ff-06c548851739" lastModifiedUtc="2012-08-23T11:24:20.2585672Z" name="EMAddressBook" audited="false">
+    <ExtendedPropertiesCollection>
+      <extendee type="Sage.Platform.Orm.Entities.OrmRelationProperty" />
+    </ExtendedPropertiesCollection>
+    <SystemDataType guid="2f770d03-c93c-4605-8ae8-7cdae04830d7">
+      <RelationshipDataType />
+    </SystemDataType>
+  </childProperty>
+  <column>
+    <OrmRelationshipColumn id="ff8977fb-7dfc-4b07-adf1-f3f01b52e8a8" parentPropertyId="3088cf65-2dc4-4fa6-b191-d3d89131e071" childPropertyId="cc2557b5-0f9d-49be-b0bb-3c16d272978f" ordinal="0" />
+  </column>
+</relationship>

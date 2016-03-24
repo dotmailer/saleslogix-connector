@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FullName.Caption" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="EMAddressBook.Caption" xml:space="preserve">
+    <value>Email Address Book</value>
+  </data>
+  <data name="EmailCampaignName.Caption" xml:space="preserve">
+    <value>EmailCampaignName</value>
+  </data>
+  <data name="LastSynchronised.Caption" xml:space="preserve">
+    <value>LastSynchronised</value>
+  </data>
+  <data name="LeadFullName.Caption" xml:space="preserve">
+    <value>Lead Full Name</value>
+  </data>
+  <data name="DateFirstOpened.Caption" xml:space="preserve">
+    <value>DateFirstOpened</value>
+  </data>
+  <data name="DateLastOpened.Caption" xml:space="preserve">
+    <value>DateLastOpened</value>
+  </data>
+  <data name="DateSent.Caption" xml:space="preserve">
+    <value>DateSent</value>
+  </data>
+  <data name="EmailAddress.Caption" xml:space="preserve">
+    <value>EmailAddress</value>
+  </data>
+  <data name="HardBounced.Caption" xml:space="preserve">
+    <value>HardBounced</value>
+  </data>
+  <data name="NumClicks.Caption" xml:space="preserve">
+    <value>NumClicks</value>
+  </data>
+  <data name="NumEstimatedForwards.Caption" xml:space="preserve">
+    <value>NumEstimatedForwards</value>
+  </data>
+  <data name="NumForwardToFriend.Caption" xml:space="preserve">
+    <value>NumForwardToFriend</value>
+  </data>
+  <data name="NumOpens.Caption" xml:space="preserve">
+    <value>NumOpens</value>
+  </data>
+  <data name="NumReplies.Caption" xml:space="preserve">
+    <value>NumReplies</value>
+  </data>
+  <data name="NumViews.Caption" xml:space="preserve">
+    <value>NumViews</value>
+  </data>
+  <data name="SoftBounced.Caption" xml:space="preserve">
+    <value>SoftBounced</value>
+  </data>
+  <data name="Unsubscribed.Caption" xml:space="preserve">
+    <value>Unsubscribed</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.a23311b8-c19c-479f-bccd-7e9115caaf1b.ColumnHeading" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.998f4499-e4a5-4037-8238-0eebcba133b0.ColumnHeading" xml:space="preserve">
+    <value>Email Address Book</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.2f1d2865-7be9-4dce-9a8d-683d9b4d0e16.ColumnHeading" xml:space="preserve">
+    <value>EmailCampaignName</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.b25ee2bd-d452-4c21-855d-cc6bd8ea31e1.ColumnHeading" xml:space="preserve">
+    <value>LastSynchronised</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.c3e2b8ee-7eff-4b98-8652-2d8f0b8dba19.ColumnHeading" xml:space="preserve">
+    <value>Lead Full Name</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.9835eaf6-d28d-4c34-aa4d-121362d7a240.ColumnHeading" xml:space="preserve">
+    <value>DateFirstOpened</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.3f8b05a0-4e78-4713-9bfc-1022313d0172.ColumnHeading" xml:space="preserve">
+    <value>DateLastOpened</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.d6717352-921d-43f6-8b77-e0c2117700a1.ColumnHeading" xml:space="preserve">
+    <value>DateSent</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.f055edd8-fa9a-49dd-9b10-34f4d9264e5d.ColumnHeading" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.19022e52-cd75-49fc-84e0-062e45f3d5c7.ColumnHeading" xml:space="preserve">
+    <value>HardBounced</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.1e21b557-34bb-4de5-98a8-c65f0a294d4b.ColumnHeading" xml:space="preserve">
+    <value>Clicks</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.fdd6afd3-bc79-4e26-aacd-3122f66a574e.ColumnHeading" xml:space="preserve">
+    <value>Estimated Forwards</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.2f0dc915-7a93-4aa2-b2fd-07441bfccb12.ColumnHeading" xml:space="preserve">
+    <value>Forwards To Friends</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.1966706a-9c79-40ef-b25b-170f24c58681.ColumnHeading" xml:space="preserve">
+    <value>Opens</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.6928cc0b-bf5f-41a6-b32f-3ab1a46231a8.ColumnHeading" xml:space="preserve">
+    <value>Replies</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.a59483b0-7212-4cf1-af6a-071ab596fbab.ColumnHeading" xml:space="preserve">
+    <value>Views</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.9f326888-91b2-4c4d-b496-56480b2c889d.ColumnHeading" xml:space="preserve">
+    <value>SoftBounced</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.ba3ea425-d958-44b9-b0ed-eb84ef30e38f.ColumnHeading" xml:space="preserve">
+    <value>Unsubscribed</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.389f0201-6b16-4588-92d8-6b9894d9f798.ColumnHeading" xml:space="preserve">
+    <value>Email Campaign</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.8d7f3965-0193-47a8-90a7-ca48bfd5e8f2.ColumnHeading" xml:space="preserve">
+    <value>Date Sent</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.388e92a0-83fb-4d61-9192-6bffc820bf0a.ColumnHeading" xml:space="preserve">
+    <value>Hard Bounced</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.d81924cc-dbb5-47e0-9e71-e5c3a3f1541f.ColumnHeading" xml:space="preserve">
+    <value>Soft Bounced</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.0d0aaf59-f7c1-4750-9d4c-8f1098838e38.ColumnHeading" xml:space="preserve">
+    <value>Unsubscribed</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.273d9064-e837-4451-9450-cd52feac7cfd.ColumnHeading" xml:space="preserve">
+    <value>Date First Opened</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.0f29b7b2-b4f2-45b9-aa57-9969ff471c20.ColumnHeading" xml:space="preserve">
+    <value>Date Last Opened</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.2ca3bc04-1c8c-455d-aeb1-e842515e608d.ColumnHeading" xml:space="preserve">
+    <value>Last Synchronised</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.b96789db-f81b-47aa-a74d-fd9df6ca2561.ColumnHeading" xml:space="preserve">
+    <value>Email Address Book</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.bb86c7da-8c7b-41dd-b809-44d5f5c82511.ColumnHeading" xml:space="preserve">
+    <value>Contact Name</value>
+  </data>
+  <data name="grdEMCampaignSendSummaries.e647ed37-015b-4b69-86dd-b03a0c5e67bc.ColumnHeading" xml:space="preserve">
+    <value>Lead Name</value>
+  </data>
+</root>

@@ -1,0 +1,13 @@
+<EmailMarketingService DictionaryName="">
+  <SDataUrl Type="String" Secured="False" ENum="False" Serialized="False" ModifiedDate="2014-07-21T15:32:02">http://54.75.63.237:3333/sdata</SDataUrl>
+  <SDataUsername Type="String" Secured="False" ENum="False" Serialized="False" ModifiedDate="2014-07-21T15:32:02">admin</SDataUsername>
+  <SDataPassword Type="String" Secured="True" ENum="False" Serialized="False" ModifiedDate="2014-07-21T15:32:02">JJ/1jgb2Xa6jpHh3+izuDQ==</SDataPassword>
+  <CheckSlxTasksFrequencySeconds Type="Int32" Secured="False" ENum="False" Serialized="False" ModifiedDate="2014-07-21T15:32:02">60</CheckSlxTasksFrequencySeconds>
+  <SyncToEmailServiceFrequencyMinutes Type="Int32" Secured="False" ENum="False" Serialized="False" ModifiedDate="2014-07-21T15:32:02">600</SyncToEmailServiceFrequencyMinutes>
+  <SyncToSlxCampaignsFrequencyMinutes Type="Int32" Secured="False" ENum="False" Serialized="False" ModifiedDate="2014-07-21T15:32:02">5000</SyncToSlxCampaignsFrequencyMinutes>
+  <EnableDeletedItemsScan Type="Boolean" Secured="False" ENum="False" Serialized="False" ModifiedDate="2014-07-21T15:32:02">True</EnableDeletedItemsScan>
+  <ScanDeletedItemsFrequencyMinutes Type="Int32" Secured="False" ENum="False" Serialized="False" ModifiedDate="2014-07-21T15:32:02">60</ScanDeletedItemsFrequencyMinutes>
+  <LoggingLevel Type="String" Secured="False" ENum="False" Serialized="False" ModifiedDate="2014-07-21T15:32:02">All</LoggingLevel>
+  <LoggingMethod Type="String" Secured="False" ENum="False" Serialized="False" ModifiedDate="2014-07-21T15:32:02">DiskFile</LoggingMethod>
+  <LogFileDirectory Type="String" Secured="False" ENum="False" Serialized="False" ModifiedDate="2014-07-21T15:32:02">C:\Saleslogix Connector Logging Output</LogFileDirectory>
+</EmailMarketingService>

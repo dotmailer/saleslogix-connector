@@ -1,0 +1,7 @@
+﻿<?xml version="1.0"?>
+<entityFilter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="OrmDistinctEntityFilter" id="b910a962-1972-4b18-9734-aa0d1f195f61" lastModifiedUtc="2012-07-31T18:05:34.4725088Z" filterName="SendStatus" propertyName="SendStatus" dataPath="EMEMAILCAMPAIGNSEND:SENDSTATUS" characters="0">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmDistinctEntityFilter" />
+  </ExtendedPropertiesCollection>
+</entityFilter>

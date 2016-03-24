@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<NavigationItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="6509ec7b-8f9b-482c-b343-ae279b43cff0">
+  <ItemId>navEntitiesEmailAddressBooks</ItemId>
+  <NavUrl>EMAddressBook.aspx</NavUrl>
+  <LargeImageUrl>[Localization!Global_Images:email_address_book32]</LargeImageUrl>
+  <SmallImageUrl>[Localization!Global_Images:email_address_book24]</SmallImageUrl>
+  <ContextMenuId>contextEmailAddressBook</ContextMenuId>
+  <Target />
+  <AppliedSecurity>Entities/EMAddressBook/View</AppliedSecurity>
+</NavigationItem>

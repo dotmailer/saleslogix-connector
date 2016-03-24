@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<relationship xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="e31f2a1a-541e-4a5d-bef7-23f3a04b0908" lastModifiedUtc="2012-08-28T14:42:18.9009243Z" parentEntityId="0822ef6c-9ea2-4bc0-99eb-610af6bda4c5" childEntityId="5498713f-5e91-40e5-9ca8-956e57cfe91c" cascadeOption="SaveUpdateDelete">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmRelationship" />
+  </ExtendedPropertiesCollection>
+  <parentProperty id="e1fe1d53-e177-4381-86ee-4259aae268b0" lastModifiedUtc="2012-04-24T14:08:32.19677Z" name="EMEmailCampaigns" audited="false">
+    <ExtendedPropertiesCollection>
+      <extendee type="Sage.Platform.Orm.Entities.OrmRelationProperty" />
+    </ExtendedPropertiesCollection>
+    <SystemDataType guid="2f770d03-c93c-4605-8ae8-7cdae04830d7">
+      <RelationshipDataType />
+    </SystemDataType>
+  </parentProperty>
+  <childProperty id="37f05bcc-9e1c-4d08-a747-0f7f84806cf5" lastModifiedUtc="2012-04-24T14:08:32.1977465Z" name="EMEmailAccount" audited="false">
+    <ExtendedPropertiesCollection>
+      <extendee type="Sage.Platform.Orm.Entities.OrmRelationProperty" />
+    </ExtendedPropertiesCollection>
+    <SystemDataType guid="2f770d03-c93c-4605-8ae8-7cdae04830d7">
+      <RelationshipDataType />
+    </SystemDataType>
+  </childProperty>
+  <column>
+    <OrmRelationshipColumn id="f8af2241-ca09-49b4-b233-82147fdcda6e" parentPropertyId="7609b24c-db88-4585-ab32-8f42ccf5d229" childPropertyId="a25224bc-f26a-42e0-939b-12574f4d2bfc" ordinal="0" />
+  </column>
+</relationship>

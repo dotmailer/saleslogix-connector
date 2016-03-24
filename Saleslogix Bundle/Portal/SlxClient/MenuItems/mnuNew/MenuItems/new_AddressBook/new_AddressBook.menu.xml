@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<MenuDropDownItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="d6e7446a-7193-4300-9a77-70c8991ea060">
+  <ItemId>new_AddressBook</ItemId>
+  <NavUrl>InsertEMAddressBook.aspx?modeid=Insert</NavUrl>
+  <LargeImageUrl>[Localization!Global_Images:email_address_book24]</LargeImageUrl>
+  <SmallImageUrl>[Localization!Global_Images:email_address_book16]</SmallImageUrl>
+  <ContextMenuId />
+  <Target />
+  <AppliedSecurity>Entities/EMAddressBook/Add</AppliedSecurity>
+</MenuDropDownItem>

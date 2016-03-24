@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<relationship xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="144e29bc-99be-4969-8303-d7d65d88ff91" lastModifiedUtc="2012-05-14T14:17:16.8711385Z" parentEntityId="5498713f-5e91-40e5-9ca8-956e57cfe91c" childEntityId="ecdf574f-89a4-4bee-849c-0c4282cd0fc2">
+  <extendedMetaData />
+  <ExtendedPropertiesCollection>
+    <extendee type="Sage.Platform.Orm.Entities.OrmRelationship" />
+  </ExtendedPropertiesCollection>
+  <parentProperty id="307241c1-eabf-4f32-9f0b-f5e37e04f28d" lastModifiedUtc="2012-05-14T14:17:15.5645815Z" name="EMCampaignConClicks" audited="false">
+    <ExtendedPropertiesCollection>
+      <extendee type="Sage.Platform.Orm.Entities.OrmRelationProperty">
+        <extender guid="ae60621d-9d91-3d9a-b9fb-eb6c8be12131">
+          <OrmEntityPropertySDataExtension generate="true" />
+        </extender>
+      </extendee>
+    </ExtendedPropertiesCollection>
+    <SystemDataType guid="2f770d03-c93c-4605-8ae8-7cdae04830d7">
+      <RelationshipDataType />
+    </SystemDataType>
+  </parentProperty>
+  <childProperty id="3cc9270d-5102-4421-b0ba-9dd028d15e99" lastModifiedUtc="2012-05-14T14:17:15.565558Z" name="EMEmailCampaign" audited="false">
+    <ExtendedPropertiesCollection>
+      <extendee type="Sage.Platform.Orm.Entities.OrmRelationProperty">
+        <extender guid="ae60621d-9d91-3d9a-b9fb-eb6c8be12131">
+          <OrmEntityPropertySDataExtension generate="true" />
+        </extender>
+      </extendee>
+    </ExtendedPropertiesCollection>
+    <SystemDataType guid="2f770d03-c93c-4605-8ae8-7cdae04830d7">
+      <RelationshipDataType />
+    </SystemDataType>
+  </childProperty>
+  <column>
+    <OrmRelationshipColumn id="46d381a9-5310-4e04-8668-327b117da134" parentPropertyId="1bbd9539-3b37-48db-9562-8c4b9f12ca7f" childPropertyId="8d10c241-fa7a-4c88-94d5-526788df8c38" ordinal="0" />
+  </column>
+</relationship>

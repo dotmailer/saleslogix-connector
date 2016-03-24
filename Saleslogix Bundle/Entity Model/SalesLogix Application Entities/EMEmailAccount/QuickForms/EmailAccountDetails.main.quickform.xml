@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<QuickFormDefinition Id="2b962d49-498a-4b69-baf3-824f7f5eea32" name="EmailAccountDetails">
+  <Properties>
+    <Property name="EntityTypeName" type="System.String">IEMEmailAccount</Property>
+    <Property name="DefaultNamespace" type="System.String">Sage.Entity.Interfaces</Property>
+    <Property name="AssemblyName" type="System.String">Sage.Entity.Interfaces</Property>
+    <Property name="UseEntityNameAsTitle" type="System.Boolean">True</Property>
+    <Property name="ImagePath" type="System.String"></Property>
+    <Property name="DefinitionType" type="System.String">Sage.Platform.QuickForms.QuickFormMainDetailViewDefinition, Sage.Platform.QuickForms</Property>
+    <Property name="Columns" type="System.ComponentModel.BindingList`1[[System.Windows.Forms.ColumnStyle, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><ArrayOfColumnStyle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><ColumnStyle><SizeType>Percent</SizeType><Width>100</Width></ColumnStyle></ArrayOfColumnStyle></Property>
+    <Property name="Rows" type="System.ComponentModel.BindingList`1[[System.Windows.Forms.RowStyle, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><ArrayOfRowStyle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><RowStyle><SizeType>Absolute</SizeType><Height>35</Height></RowStyle><RowStyle><SizeType>Absolute</SizeType><Height>35</Height></RowStyle><RowStyle><SizeType>Absolute</SizeType><Height>35</Height></RowStyle><RowStyle><SizeType>Absolute</SizeType><Height>35</Height></RowStyle><RowStyle><SizeType>Absolute</SizeType><Height>35</Height></RowStyle></ArrayOfRowStyle></Property>
+    <Property name="GeneratePrintView" type="System.Boolean">False</Property>
+    <Property name="Description" type="System.String"></Property>
+    <Property name="ActiveControl" type="System.String"></Property>
+  </Properties>
+  <LoadActions>
+    <ActionDefinition>
+      <ResourceKey>0c4171f8-e30d-4554-ad76-8e0344c91e34</ResourceKey>
+      <RootActionName>CSharpSnippetAction</RootActionName>
+      <Action>
+        <CSharpCodeSnippet><![CDATA[	// Set up showDialog function that can use the v7 or v8 dialogs
+	string js = @"
+	function showDialog(title, msg, v8width, v8icon){
+		if (Sage && Sage.UI && Sage.UI.Dialogs) {
+			// Use 'V8' dialog
+			var opts = {
+				title: title,
+				query: msg,
+				callbackFn: false,
+				yesText: 'OK',
+				noText: false,
+				scope: window,
+				icon: v8icon,
+				style: { width: v8width }
+			};
+			Sage.UI.Dialogs.raiseQueryDialogExt(opts);
+		} else {
+			// Use 'V7' dialog
+			Sage.Services.getService('WebClientMessageService').showClientMessage(title, msg);
+		}
+	}";
+	ScriptManager.RegisterClientScriptBlock(Page, Page.GetType(), "showDialogs", js, true);
+	
+	// Set the password value
+	Sage.Entity.Interfaces.IEMEmailAccount entity 
+		= (Sage.Entity.Interfaces.IEMEmailAccount)this.GetCurrentEntity();
+	
+	if (!string.IsNullOrEmpty(entity.APIPassword))
+	{
+		ScriptManager.RegisterStartupScript(
+		Page, 
+		Page.GetType(), 
+		"dummyPassword",
+        @"
+function setDummyPassword() {
+    var node = jQuery(""input[id$='APIPassword']"");
+    // The field normally starts blank, because it is unbound.
+    // If it contains data it is because the user has typed in a password but has not been saved yet.
+    if (node && node.val().length === 0) {
+        node.val(""********"");
+    }
+}
+
+// hook to the 'load' event so that, in v8, we set the val after its 'actual' value has been set
+jQuery(window).load(function() {
+    setDummyPassword();
+});
+   
+// pageLoad function gets automatically run (by asp.net ajax) when postback happens   
+function pageLoad() {
+    setDummyPassword();
+}
+",
+		true);
+	}]]></CSharpCodeSnippet>
+      </Action>
+      <IsDialogCloseAction>False</IsDialogCloseAction>
+      <RunOnEveryRePaint>True</RunOnEveryRePaint>
+      <DialogActionResult>NoResult</DialogActionResult>
+      <PerformsUpdate>False</PerformsUpdate>
+      <AppliedSecurity />
+      <RefreshData>False</RefreshData>
+    </ActionDefinition>
+  </LoadActions>
+  <QuickFormElements>
+    <QuickFormElement>
+      <Properties>
+        <Property name="EntityMappingType" type="System.String">Property</Property>
+        <Property name="EntityTypeName" type="System.String">IEMEmailAccount</Property>
+        <Property name="EntityNamespace" type="System.String">Sage.Entity.Interfaces</Property>
+        <Property name="EntityAssemblyName" type="System.String">Sage.Entity.Interfaces</Property>
+        <Property name="DefaultNamespace" type="System.String">Sage.Entity.Interfaces</Property>
+        <Property name="AssemblyName" type="System.String">Sage.Entity.Interfaces</Property>
+        <Property name="EntityReferenceName" type="System.String"></Property>
+        <Property name="ValueMember" type="System.String">AccountName</Property>
+      </Properties>
+      <ControlDefinition>
+        <Properties>
+          <Property name="Control" type="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms"><QFTextBox xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><Column>0</Column><Row>0</Row><IsReadOnly>false</IsReadOnly><HotKey>0</HotKey><TabIndex>0</TabIndex><ControlId>txtAccountName</ControlId><DataBindings><QuickFormPropertyDataBindingDefinition><DataSourceID>MainEntity</DataSourceID><DataItemName>AccountName</DataItemName><ControlItemName>Text</ControlItemName><FormatString /><NullValueString /></QuickFormPropertyDataBindingDefinition></DataBindings><ControlLabelPlacement>left</ControlLabelPlacement><CaptionAlignment>left</CaptionAlignment><StyleScheme /><MaxLength>100</MaxLength><OnChangeAction><ResourceKey>txtAccountName</ResourceKey><RootActionName>NoActionAction</RootActionName><Action /><IsDialogCloseAction>False</IsDialogCloseAction><RunOnEveryRePaint>False</RunOnEveryRePaint><DialogActionResult>NoResult</DialogActionResult><PerformsUpdate>False</PerformsUpdate><AppliedSecurity /><RefreshData>False</RefreshData></OnChangeAction></QFTextBox></Property>
+        </Properties>
+      </ControlDefinition>
+    </QuickFormElement>
+    <QuickFormElement>
+      <Properties>
+        <Property name="EntityMappingType" type="System.String">Property</Property>
+        <Property name="EntityTypeName" type="System.String">IEMEmailAccount</Property>
+        <Property name="EntityNamespace" type="System.String">Sage.Entity.Interfaces</Property>
+        <Property name="EntityAssemblyName" type="System.String">Sage.Entity.Interfaces</Property>
+        <Property name="DefaultNamespace" type="System.String">Sage.Entity.Interfaces</Property>
+        <Property name="AssemblyName" type="System.String">Sage.Entity.Interfaces</Property>
+        <Property name="EntityReferenceName" type="System.String"></Property>
+        <Property name="ValueMember" type="System.String">Description</Property>
+      </Properties>
+      <ControlDefinition>
+        <Properties>
+          <Property name="Control" type="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms"><QFTextBox xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><Column>0</Column><Row>1</Row><IsReadOnly>false</IsReadOnly><HotKey>0</HotKey><TabIndex>0</TabIndex><ControlId>Description</ControlId><DataBindings><QuickFormPropertyDataBindingDefinition><DataSourceID>MainEntity</DataSourceID><DataItemName>Description</DataItemName><ControlItemName>Text</ControlItemName><FormatString /><NullValueString /></QuickFormPropertyDataBindingDefinition></DataBindings><ControlLabelPlacement>left</ControlLabelPlacement><CaptionAlignment>left</CaptionAlignment><StyleScheme /><MaxLength>500</MaxLength><Lines>3</Lines><OnChangeAction><ResourceKey>Description</ResourceKey><RootActionName>NoActionAction</RootActionName><Action /><IsDialogCloseAction>False</IsDialogCloseAction><RunOnEveryRePaint>False</RunOnEveryRePaint><DialogActionResult>NoResult</DialogActionResult><PerformsUpdate>False</PerformsUpdate><AppliedSecurity /><RefreshData>False</RefreshData></OnChangeAction></QFTextBox></Property>
+        </Properties>
+      </ControlDefinition>
+    </QuickFormElement>
+    <QuickFormElement>
+      <Properties>
+        <Property name="EntityMappingType" type="System.String">Property</Property>
+        <Property name="EntityTypeName" type="System.String">IEMEmailAccount</Property>
+        <Property name="EntityNamespace" type="System.String">Sage.Entity.Interfaces</Property>
+        <Property name="EntityAssemblyName" type="System.String">Sage.Entity.Interfaces</Property>
+        <Property name="DefaultNamespace" type="System.String">Sage.Entity.Interfaces</Property>
+        <Property name="AssemblyName" type="System.String">Sage.Entity.Interfaces</Property>
+        <Property name="EntityReferenceName" type="System.String"></Property>
+        <Property name="ValueMember" type="System.String">APIKey</Property>
+      </Properties>
+      <ControlDefinition>
+        <Properties>
+          <Property name="Control" type="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms"><QFTextBox xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><Column>0</Column><Row>2</Row><IsReadOnly>false</IsReadOnly><HotKey>0</HotKey><TabIndex>0</TabIndex><ControlId>APIKey</ControlId><DataBindings><QuickFormPropertyDataBindingDefinition><DataSourceID>MainEntity</DataSourceID><DataItemName>APIKey</DataItemName><ControlItemName>Text</ControlItemName><FormatString /><NullValueString /></QuickFormPropertyDataBindingDefinition></DataBindings><ControlLabelPlacement>left</ControlLabelPlacement><CaptionAlignment>left</CaptionAlignment><StyleScheme /><MaxLength>38</MaxLength><OnChangeAction><ResourceKey>APIKey</ResourceKey><RootActionName>NoActionAction</RootActionName><Action /><IsDialogCloseAction>False</IsDialogCloseAction><RunOnEveryRePaint>False</RunOnEveryRePaint><DialogActionResult>NoResult</DialogActionResult><PerformsUpdate>False</PerformsUpdate><AppliedSecurity /><RefreshData>False</RefreshData></OnChangeAction></QFTextBox></Property>
+        </Properties>
+      </ControlDefinition>
+    </QuickFormElement>
+    <QuickFormElement>
+      <Properties>
+        <Property name="EntityMappingType" type="System.String">None</Property>
+      </Properties>
+      <ControlDefinition>
+        <Properties>
+          <Property name="Control" type="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms"><QFTextBox xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><Column>0</Column><Row>3</Row><IsReadOnly>false</IsReadOnly><HotKey>0</HotKey><TabIndex>0</TabIndex><ControlId>APIPassword</ControlId><DataBindings /><ControlLabelPlacement>left</ControlLabelPlacement><CaptionAlignment>left</CaptionAlignment><StyleScheme /><TextMode>Password</TextMode><OnChangeAction><ResourceKey>APIPassword</ResourceKey><RootActionName>NoActionAction</RootActionName><Action /><IsDialogCloseAction>False</IsDialogCloseAction><RunOnEveryRePaint>False</RunOnEveryRePaint><DialogActionResult>NoResult</DialogActionResult><PerformsUpdate>False</PerformsUpdate><AppliedSecurity /><RefreshData>False</RefreshData></OnChangeAction></QFTextBox></Property>
+        </Properties>
+      </ControlDefinition>
+    </QuickFormElement>
+    <QuickFormElement>
+      <Properties>
+        <Property name="EntityMappingType" type="System.String">None</Property>
+      </Properties>
+      <ControlDefinition>
+        <Properties>
+          <Property name="Control" type="Sage.Platform.QuickForms.Controls.QFTextBox, Sage.Platform.QuickForms"><QFTextBox xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><Column>0</Column><Row>4</Row><IsReadOnly>false</IsReadOnly><HotKey>0</HotKey><TabIndex>0</TabIndex><ControlId>txtEmailServiceURL</ControlId><DataBindings><QuickFormPropertyDataBindingDefinition><DataSourceID>MainEntity</DataSourceID><DataItemName>EmailApplicationUrl</DataItemName><ControlItemName>Text</ControlItemName><FormatString /><NullValueString /></QuickFormPropertyDataBindingDefinition></DataBindings><ControlLabelPlacement>left</ControlLabelPlacement><CaptionAlignment>left</CaptionAlignment><StyleScheme /><MaxLength>200</MaxLength><OnChangeAction><ResourceKey>txtEmailServiceURL</ResourceKey><RootActionName>NoActionAction</RootActionName><Action /><IsDialogCloseAction>False</IsDialogCloseAction><RunOnEveryRePaint>False</RunOnEveryRePaint><DialogActionResult>NoResult</DialogActionResult><PerformsUpdate>False</PerformsUpdate><AppliedSecurity /><RefreshData>False</RefreshData></OnChangeAction></QFTextBox></Property>
+        </Properties>
+      </ControlDefinition>
+    </QuickFormElement>
+  </QuickFormElements>
+  <QuickFormToolElements>
+    <QuickFormElement>
+      <Properties>
+        <Property name="EntityMappingType" type="System.String">None</Property>
+      </Properties>
+      <ControlDefinition>
+        <Properties>
+          <Property name="Control" type="Sage.Platform.QuickForms.Controls.QFElementSpacer, Sage.Platform.QuickForms"><QFElementSpacer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><Column>0</Column><Row>0</Row><IsReadOnly>false</IsReadOnly><HotKey>0</HotKey><TabIndex>0</TabIndex><ControlId /><DataBindings /><ControlLabelPlacement>left</ControlLabelPlacement><CaptionAlignment>left</CaptionAlignment><StyleScheme /></QFElementSpacer></Property>
+        </Properties>
+      </ControlDefinition>
+    </QuickFormElement>
+    <QuickFormElement>
+      <Properties>
+        <Property name="EntityMappingType" type="System.String">None</Property>
+      </Properties>
+      <ControlDefinition>
+        <Properties>
+          <Property name="Control" type="Sage.Platform.QuickForms.Controls.QFElementSpacer, Sage.Platform.QuickForms"><QFElementSpacer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><Column>0</Column><Row>0</Row><IsReadOnly>false</IsReadOnly><HotKey>0</HotKey><TabIndex>0</TabIndex><ControlId /><DataBindings /><ControlLabelPlacement>left</ControlLabelPlacement><CaptionAlignment>left</CaptionAlignment><StyleScheme /></QFElementSpacer></Property>
+        </Properties>
+      </ControlDefinition>
+    </QuickFormElement>
+    <QuickFormElement>
+      <Properties>
+        <Property name="EntityMappingType" type="System.String">None</Property>
+      </Properties>
+      <ControlDefinition>
+        <Properties>
+          <Property name="Control" type="Sage.SalesLogix.QuickForms.QFControls.QFSLXGroupNavigator, Sage.SalesLogix.QuickForms.QFControls"><QFSLXGroupNavigator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><Column>0</Column><Row>0</Row><IsReadOnly>false</IsReadOnly><HotKey>48</HotKey><TabIndex>0</TabIndex><ControlId>cmdGroupNavigator</ControlId><DataBindings /><ControlLabelPlacement>none</ControlLabelPlacement><CaptionAlignment>left</CaptionAlignment><StyleScheme /></QFSLXGroupNavigator></Property>
+        </Properties>
+      </ControlDefinition>
+    </QuickFormElement>
+    <QuickFormElement>
+      <Properties>
+        <Property name="EntityMappingType" type="System.String">None</Property>
+      </Properties>
+      <ControlDefinition>
+        <Properties>
+          <Property name="Control" type="Sage.Platform.QuickForms.Controls.QFButton, Sage.Platform.QuickForms"><QFButton xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><Column>0</Column><Row>0</Row><IsReadOnly>false</IsReadOnly><HotKey>0</HotKey><TabIndex>0</TabIndex><ControlId>btnSyncEmailAccount</ControlId><DataBindings /><ControlLabelPlacement>none</ControlLabelPlacement><CaptionAlignment>left</CaptionAlignment><StyleScheme /><ButtonType>Icon</ButtonType><Image>[Localization!Global_Images:SyncBtn16]</Image><OnClientClick /><OnClickAction><ResourceKey>btnSyncEmailAccount</ResourceKey><RootActionName>CSharpSnippetAction</RootActionName><Action><CSharpCodeSnippet><![CDATA[	Sage.Entity.Interfaces.IEMEmailAccount emailAccount = (Sage.Entity.Interfaces.IEMEmailAccount)this.BindingSource.Current;
+
+    // Add a sync task if a pending one doesn't already exist for this email account
+    Sage.Platform.RepositoryHelper<Sage.Entity.Interfaces.IEMSyncTask> rep = Sage.Platform.EntityFactory.GetRepositoryHelper<Sage.Entity.Interfaces.IEMSyncTask>();
+    Sage.Platform.Repository.ICriteria criteria = rep.CreateCriteria();
+    criteria.Add(rep.EF.Eq("TaskType", "SynchroniseEmailAccount"));
+    criteria.Add(rep.EF.Eq("Status", "Pending"));
+    criteria.Add(rep.EF.Like("TaskData", emailAccount.Id.ToString()));
+    var result = criteria.List<Sage.Entity.Interfaces.IEMSyncTask>();
+
+    if (result == null || result.Count == 0)
+    {
+        Sage.Entity.Interfaces.IEMSyncTask syncTask = Sage.Platform.EntityFactory.Create<Sage.Entity.Interfaces.IEMSyncTask>();
+        syncTask.TaskType = "SynchroniseEmailAccount";
+        syncTask.ScheduledStartTime = DateTime.UtcNow;
+        syncTask.Status = "Pending";
+        syncTask.TaskData = emailAccount.Id.ToString();
+        syncTask.Save();
+    }
+		
+	string js = string.Format(
+        "showDialog('{0}', '{1}', '700px', 'infoIcon');",
+        GetLocalResourceObject("SyncSuccessful.Title"),
+        GetLocalResourceObject("SyncSuccessful.Caption"));
+    ScriptManager.RegisterStartupScript(Page, GetType(), ClientID, js, true);]]></CSharpCodeSnippet></Action><IsDialogCloseAction>False</IsDialogCloseAction><RunOnEveryRePaint>False</RunOnEveryRePaint><DialogActionResult>NoResult</DialogActionResult><PerformsUpdate>False</PerformsUpdate><AppliedSecurity>ENTITIES/EMEMAILACCOUNT/EDIT</AppliedSecurity><RefreshData>False</RefreshData></OnClickAction></QFButton></Property>
+        </Properties>
+      </ControlDefinition>
+    </QuickFormElement>
+    <QuickFormElement>
+      <Properties>
+        <Property name="EntityMappingType" type="System.String">None</Property>
+      </Properties>
+      <ControlDefinition>
+        <Properties>
+          <Property name="Control" type="Sage.Platform.QuickForms.Controls.QFButton, Sage.Platform.QuickForms"><QFButton xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><Column>0</Column><Row>0</Row><IsReadOnly>false</IsReadOnly><HotKey>0</HotKey><TabIndex>0</TabIndex><ControlId>btnTest</ControlId><DataBindings /><ControlLabelPlacement>none</ControlLabelPlacement><CaptionAlignment>left</CaptionAlignment><StyleScheme /><ButtonType>Icon</ButtonType><Image>[Localization!Global_Images:check]</Image><OnClientClick /><OnClickAction><ResourceKey>btnTest</ResourceKey><RootActionName>CSharpSnippetAction</RootActionName><Action><CSharpCodeSnippet><![CDATA[	// Save the form so we don't have to worry about whether the password has been changed
+	btnSave_ClickAction(sender, e);
+
+	Sage.Entity.Interfaces.IEMEmailAccount entity = (Sage.Entity.Interfaces.IEMEmailAccount)GetCurrentEntity();
+	
+	// The password is encrypted, so we must decrypt it
+	string secKey = @"2@t?0e~))""x}fzke#8S!%Y<Ze@:s{_KG[!z?WS\a?zR)T.\-Hr,%Y'_f~wy*oO1";
+    string input = entity.APIPassword;
+byte[] encryptedBytes = Convert.FromBase64String(input);
+	byte[] saltBytes = Encoding.UTF8.GetBytes(secKey);
+	string password = string.Empty;
+	using (var aes = new System.Security.Cryptography.AesManaged())
+	{
+		System.Security.Cryptography.Rfc2898DeriveBytes rfc = new System.Security.Cryptography.Rfc2898DeriveBytes(secKey, saltBytes);
+		aes.BlockSize = aes.LegalBlockSizes[0].MaxSize;
+		aes.KeySize = aes.LegalKeySizes[0].MaxSize;
+		aes.Key = rfc.GetBytes(aes.KeySize / 8);
+		aes.IV = rfc.GetBytes(aes.BlockSize / 8);
+
+		using (System.Security.Cryptography.ICryptoTransform decryptTransform = aes.CreateDecryptor())
+		{
+			using (System.IO.MemoryStream decryptedStream = new System.IO.MemoryStream())
+			{
+				System.Security.Cryptography.CryptoStream decryptor =
+					new System.Security.Cryptography.CryptoStream(decryptedStream, decryptTransform, System.Security.Cryptography.CryptoStreamMode.Write);
+				decryptor.Write(encryptedBytes, 0, encryptedBytes.Length);
+				decryptor.Flush();
+				decryptor.Close();
+
+				byte[] decryptBytes = decryptedStream.ToArray();
+				password = UTF8Encoding.UTF8.GetString(decryptBytes, 0, decryptBytes.Length);
+			}
+		}
+	}
+	
+	dotMailer.Sdk.Objects.DmAccountInfo accInfo = null;
+    string js;
+	try
+	{
+		dotMailer.Sdk.DmServiceFactory.Logging = true;
+		var service = dotMailer.Sdk.DmServiceFactory.Create(APIKey.Text, password);
+		accInfo = service.GetAccountInfo();
+	}
+	catch (dotMailer.Sdk.DmException ex)
+	{
+        js = string.Format("showDialog('Connection Test', 'Could not connect to email service - {0}', '300px', 'errorIcon');", ex.Code);
+        ScriptManager.RegisterStartupScript(Page, GetType(), ClientID, js, true);
+        return;
+	}
+	
+	if (accInfo == null)
+	{
+        js = "showDialog('Connection Test', 'Could not connect to email service', '300px', 'errorIcon');";
+        ScriptManager.RegisterStartupScript(Page, GetType(), ClientID, js, true);
+        return;
+	}
+
+    js = "showDialog('Connection Test', 'Connected to email service OK', '300px', 'infoIcon');";
+    ScriptManager.RegisterStartupScript(Page, GetType(), ClientID, js, true);]]></CSharpCodeSnippet></Action><IsDialogCloseAction>False</IsDialogCloseAction><RunOnEveryRePaint>False</RunOnEveryRePaint><DialogActionResult>NoResult</DialogActionResult><PerformsUpdate>False</PerformsUpdate><AppliedSecurity /><RefreshData>False</RefreshData></OnClickAction></QFButton></Property>
+        </Properties>
+      </ControlDefinition>
+    </QuickFormElement>
+    <QuickFormElement>
+      <Properties>
+        <Property name="EntityMappingType" type="System.String">None</Property>
+      </Properties>
+      <ControlDefinition>
+        <Properties>
+          <Property name="Control" type="Sage.Platform.QuickForms.Controls.QFButton, Sage.Platform.QuickForms"><QFButton xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><Column>0</Column><Row>0</Row><IsReadOnly>false</IsReadOnly><HotKey>0</HotKey><TabIndex>0</TabIndex><ControlId>btnSave</ControlId><DataBindings /><ControlLabelPlacement>none</ControlLabelPlacement><CaptionAlignment>left</CaptionAlignment><StyleScheme /><ButtonType>Icon</ButtonType><Image>[Localization!Global_Images:Save_16x16]</Image><OnClientClick /><OnClickAction><ResourceKey>btnSave</ResourceKey><RootActionName>CSharpSnippetAction</RootActionName><Action><CSharpCodeSnippet><![CDATA[Sage.Entity.Interfaces.IEMEmailAccount entity 
+	    = (Sage.Entity.Interfaces.IEMEmailAccount)this.GetCurrentEntity();
+
+    if (APIPassword.Text != "********")
+    {
+        // -----------------------------------------------------------------
+        // Encrypt the password before saving to database
+        // -----------------------------------------------------------------
+        string input = APIPassword.Text;
+        string secKey = @"2@t?0e~))""x}fzke#8S!%Y<Ze@:s{_KG[!z?WS\a?zR)T.\-Hr,%Y'_f~wy*oO1";
+        byte[] utfData = UTF8Encoding.UTF8.GetBytes(input);
+        byte[] saltBytes = Encoding.UTF8.GetBytes(secKey);
+        string encryptedString = string.Empty;
+        using (System.Security.Cryptography.AesManaged aes = new System.Security.Cryptography.AesManaged())
+        {
+            System.Security.Cryptography.Rfc2898DeriveBytes rfc = new System.Security.Cryptography.Rfc2898DeriveBytes(secKey, saltBytes);
+
+            aes.BlockSize = aes.LegalBlockSizes[0].MaxSize;
+            aes.KeySize = aes.LegalKeySizes[0].MaxSize;
+            aes.Key = rfc.GetBytes(aes.KeySize / 8);
+            aes.IV = rfc.GetBytes(aes.BlockSize / 8);
+
+            using (System.Security.Cryptography.ICryptoTransform encryptTransform = aes.CreateEncryptor())
+            {
+                using (System.IO.MemoryStream encryptedStream = new System.IO.MemoryStream())
+                {
+                    using (System.Security.Cryptography.CryptoStream encryptor
+                        = new System.Security.Cryptography.CryptoStream(
+                            encryptedStream,
+                            encryptTransform,
+                            System.Security.Cryptography.CryptoStreamMode.Write))
+                    {
+                        encryptor.Write(utfData, 0, utfData.Length);
+                        encryptor.Flush();
+                        encryptor.Close();
+
+                        byte[] encryptBytes = encryptedStream.ToArray();
+                        encryptedString = Convert.ToBase64String(encryptBytes);
+                    }
+                }
+            }
+        }
+        entity.APIPassword = encryptedString;
+ 
+    }
+	// Save changes
+    entity.Save();]]></CSharpCodeSnippet></Action><IsDialogCloseAction>False</IsDialogCloseAction><RunOnEveryRePaint>False</RunOnEveryRePaint><DialogActionResult>NoResult</DialogActionResult><PerformsUpdate>True</PerformsUpdate><AppliedSecurity>ENTITIES/EMEMAILACCOUNT/EDIT</AppliedSecurity><RefreshData>False</RefreshData></OnClickAction></QFButton></Property>
+        </Properties>
+      </ControlDefinition>
+    </QuickFormElement>
+    <QuickFormElement>
+      <Properties>
+        <Property name="EntityMappingType" type="System.String">None</Property>
+      </Properties>
+      <ControlDefinition>
+        <Properties>
+          <Property name="Control" type="Sage.Platform.QuickForms.Controls.QFButton, Sage.Platform.QuickForms"><QFButton xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><Column>0</Column><Row>0</Row><IsReadOnly>false</IsReadOnly><HotKey>0</HotKey><TabIndex>0</TabIndex><ControlId>btnDelete</ControlId><DataBindings /><ControlLabelPlacement>none</ControlLabelPlacement><CaptionAlignment>left</CaptionAlignment><StyleScheme /><ButtonType>Icon</ButtonType><Image>[Localization!Global_Images:Delete_16x16]</Image><OnClientClick /><OnClickAction><ResourceKey>btnDelete</ResourceKey><RootActionName>CSharpSnippetAction</RootActionName><Action><CSharpCodeSnippet><![CDATA[Sage.Entity.Interfaces.IEMEmailAccount thisEmailAccount = (Sage.Entity.Interfaces.IEMEmailAccount)this.BindingSource.Current;
+
+if (thisEmailAccount.EMAddressBooks.Count > 0 || thisEmailAccount.EMEmailCampaigns.Count > 0)
+{
+	throw new Sage.Platform.Application.ValidationException("This Email Account has Campaigns and/or Address Books associated to it and cannot be deleted.");
+}
+else
+{
+	thisEmailAccount.Delete();
+	Response.Redirect("EMEmailAccount.aspx?modeid=list");
+}]]></CSharpCodeSnippet></Action><IsDialogCloseAction>False</IsDialogCloseAction><RunOnEveryRePaint>False</RunOnEveryRePaint><DialogActionResult>NoResult</DialogActionResult><PerformsUpdate>False</PerformsUpdate><AppliedSecurity>ENTITIES/EMEMAILACCOUNT/DELETE</AppliedSecurity><RefreshData>False</RefreshData></OnClickAction></QFButton></Property>
+        </Properties>
+      </ControlDefinition>
+    </QuickFormElement>
+  </QuickFormToolElements>
+</QuickFormDefinition>

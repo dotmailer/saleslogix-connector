@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblCampaignName.Caption" xml:space="preserve">
+    <value>Campaign Name:</value>
+  </data>
+  <data name="lblCampaignType.Caption" xml:space="preserve">
+    <value>Campaign Type:</value>
+  </data>
+  <data name="lblFriendlyFromAddress.Caption" xml:space="preserve">
+    <value>Friendly From Address:</value>
+  </data>
+  <data name="lblReplyAction.Caption" xml:space="preserve">
+    <value>Reply Action:</value>
+  </data>
+  <data name="lblReplyEmail.Caption" xml:space="preserve">
+    <value>Reply Email:</value>
+  </data>
+  <data name="lblSubject.Caption" xml:space="preserve">
+    <value>Subject:</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="SendCampaignWizard_ClientScript" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>SendCampaignWizard_ClientScript.js;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="lblLessDuplicateTargets.Caption" xml:space="preserve">
+    <value>less Duplicate Targets:</value>
+  </data>
+  <data name="lblLessTargetsDoNotSolicit.Caption" xml:space="preserve">
+    <value>less Targets suppressed by 'Do Not Solicit/Email':</value>
+  </data>
+  <data name="lblLessTargetsNoEmail.Caption" xml:space="preserve">
+    <value>less Targets without an Email address:</value>
+  </data>
+  <data name="lblTotalPotentialTargets.Caption" xml:space="preserve">
+    <value>Total Potential Targets:</value>
+  </data>
+  <data name="lblTotalUniqueTargets.Caption" xml:space="preserve">
+    <value>Total Unique Targets Available for Campaign:</value>
+  </data>
+  <data name="ddlMetricClicks.Caption" xml:space="preserve">
+    <value>Clicks</value>
+  </data>
+  <data name="ddlMetricOpens.Caption" xml:space="preserve">
+    <value>Opens</value>
+  </data>
+  <data name="litEmailCampaignDetails.Title" xml:space="preserve">
+    <value>Email Campaign Details</value>
+  </data>
+  <data name="litEmailCampaignOptions.MainTitle" xml:space="preserve">
+    <value>Email Campaign Options</value>
+  </data>
+  <data name="litEmailCampaignOptions.SubTitle" xml:space="preserve">
+    <value>Select the options required for this Email Campaign</value>
+  </data>
+  <data name="litEmailCampaignTargets.MainTitle" xml:space="preserve">
+    <value>Email Campaign Targets</value>
+  </data>
+  <data name="litEmailCampaignTargets.SubTitle" xml:space="preserve">
+    <value>Select the targets for this Email Campaign</value>
+  </data>
+  <data name="litEmailCampaignTargetsCount.MainTitle" xml:space="preserve">
+    <value>Email Campaign Targets Count</value>
+  </data>
+  <data name="litEmailCampaignTargetsCount.SubTitle" xml:space="preserve">
+    <value>Review the targets available for this Email Campaign</value>
+  </data>
+  <data name="litSendSummaryImmediately.Caption" xml:space="preserve">
+    <value>Your campaign will be sent immediately.</value>
+  </data>
+  <data name="litSendSummaryScheduled.Caption" xml:space="preserve">
+    <value>Your campaign will be sent on {0}.</value>
+    <comment>{0} = date the campaign will be sent.</comment>
+  </data>
+  <data name="litSendTime.Caption" xml:space="preserve">
+    <value>Please select when you would like to send this campaign.</value>
+  </data>
+  <data name="litSendTime.Title" xml:space="preserve">
+    <value>Send Time</value>
+  </data>
+  <data name="litSplitTesting.Caption" xml:space="preserve">
+    <value>Your campaign has been configured to use split testing.</value>
+  </data>
+  <data name="litSplitTesting.Title" xml:space="preserve">
+    <value>Split Testing</value>
+  </data>
+  <data name="litSplitTestingMetric.Caption" xml:space="preserve">
+    <value>What metric would you like to measure when recording responses?</value>
+  </data>
+  <data name="litSplitTestingTargetPercentage.Caption" xml:space="preserve">
+    <value>How many targets would you like to send the split test to?</value>
+  </data>
+  <data name="litSplitTestingWaitHours.Caption" xml:space="preserve">
+    <value>How many hours (max 24) would you like to wait while measuring the responses? </value>
+  </data>
+  <data name="litSummary.Title" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="litSuppressionAnalysis.Title" xml:space="preserve">
+    <value>Analysis of Suppression Reasons (excluding Targets already sent)</value>
+  </data>
+  <data name="litTargetAddressBooks.Title" xml:space="preserve">
+    <value>Target Address Books</value>
+  </data>
+  <data name="litTargetSummary.Title" xml:space="preserve">
+    <value>Target Summary</value>
+  </data>
+  <data name="radImmediately.Caption" xml:space="preserve">
+    <value>Immediately</value>
+  </data>
+  <data name="radScheduled.Caption" xml:space="preserve">
+    <value>Scheduled</value>
+  </data>
+  <data name="lblSummaryCampaignName.Caption" xml:space="preserve">
+    <value>Campaign Name:</value>
+  </data>
+  <data name="lblSummaryCampaignType.Caption" xml:space="preserve">
+    <value>Campaign Type:</value>
+  </data>
+  <data name="lblSummaryFriendlyFromAddress.Caption" xml:space="preserve">
+    <value>Friendly From Address:</value>
+  </data>
+  <data name="lblSummaryReplyAction.Caption" xml:space="preserve">
+    <value>Reply Action:</value>
+  </data>
+  <data name="lblSummaryReplyEmail.Caption" xml:space="preserve">
+    <value>Reply Email:</value>
+  </data>
+  <data name="lblSummarySendTime.Caption" xml:space="preserve">
+    <value>Send Time:</value>
+  </data>
+  <data name="lblSummarySubject.Caption" xml:space="preserve">
+    <value>Subject:</value>
+  </data>
+  <data name="litCheckOptionsSummary.Title" xml:space="preserve">
+    <value>Check Options</value>
+  </data>
+  <data name="litEmailCampaignSummary.MainTitle" xml:space="preserve">
+    <value>Email Campaign Summary</value>
+  </data>
+  <data name="litEmailCampaignSummary.SubTitle" xml:space="preserve">
+    <value>Check and confirm the options selected for this Email Campaign</value>
+  </data>
+  <data name="litSendSummaryNoSplit.Caption" xml:space="preserve">
+    <value>It will consist of {0} emails.</value>
+    <comment>{0} = total number of unique emails.</comment>
+  </data>
+  <data name="litSendSummarySplit.Caption" xml:space="preserve">
+    <value>It will consist of {0} emails of which {1} emails will be used for split testing. Responses for this initial batch will be measured for {2} hour(s). Once this period is complete, the remainder of {3} emails will be sent, using the subject line that performed best.</value>
+    <comment>{0} = total number of unique emails, {1} = number of emails to be sent in split period, {2} = period in hours to wait before sending remaining emails, {3} = number of remaining emails to be sent.</comment>
+  </data>
+  <data name="litEmailCampaignCompletion.Caption" xml:space="preserve">
+    <value>Email Campaign has been successfully submitted to the queue.</value>
+  </data>
+  <data name="litEmailCampaignCompletion.MainTitle" xml:space="preserve">
+    <value>Email Campaign Completion</value>
+  </data>
+  <data name="litEmailCampaignCompletion.SubTitle" xml:space="preserve">
+    <value>Email Campaign will be executed and sent to targets</value>
+  </data>
+  <data name="lblTargetsAlreadySent.Caption" xml:space="preserve">
+    <value>less Targets already sent:</value>
+  </data>
+</root>

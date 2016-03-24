@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<MenuDropDownItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="05e69586-f086-4033-a7ae-001dcc395e6c">
+  <ItemId>menuNewEmailAccount</ItemId>
+  <NavUrl>InsertEMEmailAccount.aspx?modeid=Insert</NavUrl>
+  <LargeImageUrl>[Localization!Global_Images:email_account24]</LargeImageUrl>
+  <SmallImageUrl>[Localization!Global_Images:email_account16]</SmallImageUrl>
+  <ContextMenuId />
+  <Target />
+  <AppliedSecurity>Entities/EMEmailAccount/Add</AppliedSecurity>
+</MenuDropDownItem>
