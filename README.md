@@ -10,4 +10,6 @@ Some notes on the code:
 * This connector was originally developed using .NET 4. However, it's been updated to target the .NET 4.5.2 framework as that's Microsoft's minimum supported version of the 4.x release as of January 2016.
 * This code has been extensively cleaned to prepare it for public release. Since we no longer maintain a test Saleslogix environment, it is possible that there have been breaking changes or omissions. **We strongly encourage pull requests to fix any problems you encounter**.
 
+Some installation and user guides are available, but please note that they may be out of date at this time.
+
 This connector is released under the MIT license. Please see LICENSE.md for details.
