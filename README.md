@@ -1,6 +1,6 @@
 # dotmailer for Saleslogix / Infor CRM
 
-This repository contains a connector that integrates dotmailer with Saleslogix (now Infor CRM). Originally built for us by a third party, it's used by quite a few customers. Please note that we don't offer support for this connector at this time, though we'd be happy to refer you to a number of third parties who are very capable of offering support and integration consultancy.
+This repository contains a connector that integrates dotmailer with Saleslogix (now Infor CRM). Originally built for us by a third party, it's used by quite a few customers. Please note that we don't offer support for this connector at this time, though as it is now open sourced under the MIT license you are now able to develop it yourself.
 
 Some notes on the code:
 
